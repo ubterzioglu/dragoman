@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "tours": "Excursions",
+    "customTours": "Excursions privées",
+    "about": "À propos",
+    "gallery": "Galerie",
+    "reviews": "Avis",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "book": "Réserver"
+  },
+  "hero": {
+    "title": "Rencontrez la mer à Kekova",
+    "subtitle": "Pagayez au-dessus de la cité engloutie, nagez dans des criques cachées et découvrez la côte lycienne à couper le souffle en kayak de mer.",
+    "ctaTours": "Découvrir les excursions",
+    "ctaBook": "Réserver"
+  },
+  "common": {
+    "from": "à partir de",
+    "perPerson": "par personne",
+    "duration": "Durée",
+    "distance": "Distance",
+    "departure": "Départ",
+    "arrival": "Retour",
+    "level": "Niveau",
+    "route": "Itinéraire",
+    "included": "Ce qui est inclus",
+    "highlights": "Points forts",
+    "itinerary": "Programme",
+    "viewDetails": "Voir les détails",
+    "bookNow": "Réserver",
+    "askQuestion": "Poser une question",
+    "loading": "Chargement...",
+    "km": "km",
+    "hikingKm": "km de randonnée"
+  },
+  "level": {
+    "beginner": "Accessible aux débutants",
+    "intermediate-advanced": "Intermédiaire / Avancé"
+  },
+  "whyChoose": {
+    "title": "Pourquoi nous choisir ?",
+    "subtitle": "Petits groupes encadrés par des guides experts diplômés — une expérience sûre et inoubliable."
+  },
+  "tours": {
+    "title": "Excursions & Aventures",
+    "subtitle": "Des criques calmes aux itinéraires en pleine mer — des options pour tous les niveaux."
+  },
+  "reservation": {
+    "title": "Demande de réservation",
+    "subtitle": "Remplissez le formulaire et nous vous répondrons rapidement. Vous pouvez aussi nous écrire directement sur WhatsApp.",
+    "tour": "Excursion",
+    "selectTour": "Choisir une excursion",
+    "date": "Date",
+    "partySize": "Nombre de personnes",
+    "name": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "message": "Votre message (facultatif)",
+    "submit": "Envoyer la demande",
+    "submitting": "Envoi...",
+    "successTitle": "Demande reçue !",
+    "success": "Nous vous contacterons rapidement. Ouverture de WhatsApp...",
+    "error": "Une erreur s'est produite. Veuillez nous contacter sur WhatsApp.",
+    "orWhatsapp": "ou écrivez sur WhatsApp"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Contactez-nous pour les disponibilités et les réservations.",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "address": "Adresse",
+    "follow": "Suivez-nous"
+  },
+  "footer": {
+    "tagline": "Excursions guidées en kayak de mer dans la région de Kekova & Kaş.",
+    "rights": "Tous droits réservés.",
+    "quickLinks": "Liens rapides"
+  },
+  "about": {
+    "title": "À propos",
+    "subtitle": "Membre de Dragoman Turkey — pionniers du kayak de mer sur la côte de Kaş et de Kekova.",
+    "eyebrow": "Qui sommes-nous ?",
+    "storyTitle": "L'histoire de Dragoman SeaKayak",
+    "storyBody": "Dragoman SeaKayak a été fondé à Kaş, Antalya, au sein de Dragoman Turkey, l'une des agences de voyage les plus établies de Turquie. Au fil des années, nous avons guidé des centaines de visiteurs sur les eaux enchanteresses de Kekova — pagayant au-dessus de la Cité engloutie, explorant des criques cachées le long de la côte lycienne et mouillant dans d'anciens ports. Notre mission a toujours été la même : offrir une immersion profonde dans la nature et l'histoire, en petits groupes en toute sécurité.",
+    "guidesTitle": "Nos guides experts",
+    "guidesBody": "Tous nos guides sont agréés par le ministère turc de la Culture et du Tourisme. Grâce à une formation complète en technique de kayak de mer, premiers secours et archéologie régionale, nos guides offrent une expérience sûre et enrichissante à chaque groupe. Les groupes comptent généralement 8 à 12 personnes, garantissant une attention personnalisée pour chaque participant.",
+    "safetyTitle": "Nos standards de sécurité",
+    "safetyBody": "Tout notre équipement est entretenu régulièrement et répond aux normes de sécurité européennes. Chaque kayak est équipé d'un gilet de sauvetage, d'un casque et d'un sac étanche. Les itinéraires sont mis à jour en temps réel selon les conditions météorologiques — la sécurité de nos clients passe avant tout."
+  },
+  "custom": {
+    "title": "Excursions privées & sur mesure",
+    "subtitle": "Des expériences de kayak de mer entièrement personnalisées, conçues autour de vous et de votre groupe.",
+    "eyebrow": "Rien que pour vous",
+    "heroTitle": "Vous choisissez l'itinéraire",
+    "heroSubtitle": "Des vacances en famille à la sortie d'entreprise, de la escapade romantique à l'expédition de plusieurs jours — conçu pour chaque demande.",
+    "whyTitle": "Pourquoi réserver une excursion privée ?",
+    "feature1Title": "Itinéraire personnalisé",
+    "feature1Body": "Nous concevons un programme sur mesure à travers les criques de Kekova, Kaş et au-delà. Planifiez votre itinéraire avec votre guide.",
+    "feature2Title": "Guide privé",
+    "feature2Body": "Le groupe est uniquement le vôtre. Votre guide vous consacre toute son expertise et son attention.",
+    "feature3Title": "Dates & durée flexibles",
+    "feature3Body": "D'une excursion d'une journée à une expédition de plusieurs jours, le calendrier est le vôtre. Réservez tôt pour garantir votre date préférée.",
+    "feature4Title": "Familles & groupes",
+    "feature4Body": "Convient à tous les âges, enfants inclus. L'itinéraire et le rythme sont adaptés à la taille et au niveau du groupe.",
+    "ctaContact": "Obtenir un devis",
+    "ctaWhatsapp": "Écrire sur WhatsApp"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce que vous devez savoir avant de pagayer.",
+    "eyebrow": "FAQ"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Des moments capturés sur les eaux magiques de Kekova.",
+    "eyebrow": "Photos"
+  },
+  "reviews": {
+    "title": "Avis des clients",
+    "subtitle": "L'expérience Dragoman SeaKayak vue par nos participants.",
+    "eyebrow": "Avis",
+    "filterAll": "Tous",
+    "filterFeatured": "En vedette",
+    "sortNewest": "Plus récents",
+    "ratingLabel": "Note",
+    "featuredBadge": "En vedette",
+    "filterByLang": "Filtrer par langue"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "subtitle": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "cta": "Retour à l'accueil"
+  }
+}

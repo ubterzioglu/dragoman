@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "tours": "Turlar",
+    "customTours": "Özel Turlar",
+    "about": "Hakkımızda",
+    "gallery": "Galeri",
+    "reviews": "Yorumlar",
+    "contact": "İletişim",
+    "faq": "S.S.S.",
+    "book": "Rezervasyon"
+  },
+  "hero": {
+    "title": "Kekova'da denizle buluş",
+    "subtitle": "Batık şehir üzerinde kürek çek, saklı koylarda yüz, Likya kıyısının eşsiz güzelliğini deniz kayağıyla keşfet.",
+    "ctaTours": "Turları keşfet",
+    "ctaBook": "Hemen rezervasyon"
+  },
+  "common": {
+    "from": "başlangıç",
+    "perPerson": "kişi başı",
+    "duration": "Süre",
+    "distance": "Mesafe",
+    "departure": "Kalkış",
+    "arrival": "Dönüş",
+    "level": "Seviye",
+    "route": "Rota",
+    "included": "Dahil olanlar",
+    "highlights": "Öne çıkanlar",
+    "itinerary": "Tur Programı",
+    "viewDetails": "Detayları gör",
+    "bookNow": "Rezervasyon yap",
+    "askQuestion": "Soru sor",
+    "loading": "Yükleniyor...",
+    "km": "km",
+    "hikingKm": "km yürüyüş"
+  },
+  "level": {
+    "beginner": "Başlangıç dostu",
+    "intermediate-advanced": "Orta / İleri seviye"
+  },
+  "whyChoose": {
+    "title": "Neden Bizi Seçmelisiniz?",
+    "subtitle": "Lisanslı rehberler eşliğinde küçük gruplarla, güvenli ve unutulmaz bir deneyim."
+  },
+  "tours": {
+    "title": "Turlar & Maceralar",
+    "subtitle": "Sakin koylardan açık deniz rotalarına kadar her seviyeye uygun seçenekler."
+  },
+  "reservation": {
+    "title": "Rezervasyon Talebi",
+    "subtitle": "Formu doldurun; size en kısa sürede dönelim. İsterseniz doğrudan WhatsApp'tan da yazabilirsiniz.",
+    "tour": "Tur",
+    "selectTour": "Tur seçin",
+    "date": "Tarih",
+    "partySize": "Kişi sayısı",
+    "name": "Ad Soyad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "message": "Mesajınız (isteğe bağlı)",
+    "submit": "Talebi gönder",
+    "submitting": "Gönderiliyor...",
+    "successTitle": "Talebiniz alındı!",
+    "success": "En kısa sürede sizinle iletişime geçeceğiz. WhatsApp penceresi açılıyor...",
+    "error": "Bir sorun oluştu. Lütfen WhatsApp üzerinden bize ulaşın.",
+    "orWhatsapp": "veya WhatsApp ile yaz"
+  },
+  "contact": {
+    "title": "Bize ulaşın",
+    "subtitle": "Müsaitlik ve rezervasyon için iletişime geçin.",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "address": "Adres",
+    "follow": "Bizi takip edin"
+  },
+  "footer": {
+    "tagline": "Kekova & Kaş bölgesinde rehberli deniz kayağı turları.",
+    "rights": "Tüm hakları saklıdır.",
+    "quickLinks": "Hızlı bağlantılar"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "Dragoman Turkey bünyesinde, Kaş ve Kekova kıyılarında deniz kayağının öncüsü.",
+    "eyebrow": "Kim Biz?",
+    "storyTitle": "Dragoman SeaKayak'ın Hikayesi",
+    "storyBody": "Dragoman SeaKayak, Türkiye'nin en köklü seyahat şirketi Dragoman Turkey'nin bir parçası olarak Kaş, Antalya'da kuruldu. Yıllar içinde Kekova'nın büyüleyici sularında yüzlerce misafire rehberlik ettik; Batık Şehir'in üzerinde kürek çektik, Likya kıyısının saklı koylarını keşfettik, antik limanlarda demir attık. Amacımız her zaman aynı oldu: güvenli, küçük gruplarla derin bir doğa ve tarih deneyimi sunmak.",
+    "guidesTitle": "Uzman Rehberlerimiz",
+    "guidesBody": "Tüm rehberlerimiz Türkiye Kültür ve Turizm Bakanlığı tarafından lisanslandırılmıştır. Deniz kayağı tekniği, ilk yardım ve bölge arkeolojisi konularında kapsamlı eğitim almış rehberlerimiz, her gruba güvenli ve zengin bir deneyim sunar. Gruplarımız genellikle 8-12 kişiden oluşur; bu sayede her katılımcıya bireysel ilgi gösterilir.",
+    "safetyTitle": "Güvenlik Standartlarımız",
+    "safetyBody": "Tüm ekipmanımız düzenli olarak bakımdan geçirilir ve AB güvenlik standartlarını karşılar. Her tüpte can yeleği, kask ve su geçirmez çanta bulunur. Rotalarımız hava koşullarına göre anlık olarak güncellenir; misafirlerimizin can güvenliği her şeyden önce gelir."
+  },
+  "custom": {
+    "title": "Özel & Kişiye Özel Turlar",
+    "subtitle": "Sizi ve grubunuzu ön plana alan, tamamen kişiselleştirilmiş deniz kayağı deneyimleri.",
+    "eyebrow": "Sadece Sizin İçin",
+    "heroTitle": "Rotanızı Siz Belirleyin",
+    "heroSubtitle": "Aile tatilinden kurumsal geziye, romantik balayından çok günlük ekspedisyona kadar her isteğe özel tasarım.",
+    "whyTitle": "Özel Tur Avantajları",
+    "feature1Title": "Kişiselleştirilmiş Rota",
+    "feature1Body": "Kekova, Kaş veya çevresindeki koylar arasından size özel bir rota tasarlayalım. Rotanızı birlikte planlayabiliriz.",
+    "feature2Title": "Özel Rehber",
+    "feature2Body": "Grupta yalnızca siz varsınız. Rehberiniz tüm deneyimini ve dikkatini size ayırır.",
+    "feature3Title": "Esnek Tarih & Süre",
+    "feature3Body": "Günübirlik turdan çok günlük ekspedisyona kadar, takvim sizindir. Erken rezervasyonla tercih ettiğiniz tarihi garantileyin.",
+    "feature4Title": "Aileler & Gruplar",
+    "feature4Body": "Çocuklar dahil her yaş grubuna uygundur. Grup büyüklüğüne ve deneyim seviyesine göre rota ayarlanır.",
+    "ctaContact": "Teklif alın",
+    "ctaWhatsapp": "WhatsApp'tan yazın"
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "Aklınızdaki tüm sorular için.",
+    "eyebrow": "SSS"
+  },
+  "gallery": {
+    "title": "Galeri",
+    "subtitle": "Kekova'nın büyüleyici sularında çekilen anlar.",
+    "eyebrow": "Fotoğraflar"
+  },
+  "reviews": {
+    "title": "Misafir Yorumları",
+    "subtitle": "Katılımcılarımızın gözünden Dragoman SeaKayak deneyimi.",
+    "eyebrow": "Yorumlar",
+    "filterAll": "Tümü",
+    "filterFeatured": "Öne Çıkanlar",
+    "sortNewest": "En Yeni",
+    "ratingLabel": "Puan",
+    "featuredBadge": "Öne Çıkan",
+    "filterByLang": "Dile göre filtrele"
+  },
+  "notFound": {
+    "title": "Sayfa Bulunamadı",
+    "subtitle": "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
+    "cta": "Ana sayfaya dön"
+  }
+}

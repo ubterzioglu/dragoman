@@ -1,0 +1,39 @@
+import { useNavigate, useLocation, useParams } from "react-router-dom";
+import { LOCALES, isLocale, DEFAULT_LOCALE } from "@/lib/site";
+import { cn } from "@/lib/utils";
+
+const LABELS: Record<string, string> = { tr: "TR", en: "EN", fr: "FR" };
+
+/** Swaps the :lang segment of the current path, preserving the rest. */
+export function LanguageSwitcher({ className }: { className?: string }) {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { lang } = useParams();
+  const current = isLocale(lang) ? lang : DEFAULT_LOCALE;
+
+  const switchTo = (next: string) => {
+    const parts = location.pathname.split("/");
+    // parts[0] = "" , parts[1] = current lang
+    parts[1] = next;
+    navigate(parts.join("/") || `/${next}`);
+  };
+
+  return (
+    <div className={cn("flex items-center gap-1", className)}>
+      {LOCALES.map((l) => (
+        <button
+          key={l}
+          type="button"
+          onClick={() => switchTo(l)}
+          aria-current={l === current}
+          className={cn(
+            "rounded-full px-2.5 py-1 text-sm font-semibold transition-colors",
+            l === current ? "bg-orange text-white" : "text-teal hover:bg-foam",
+          )}
+        >
+          {LABELS[l]}
+        </button>
+      ))}
+    </div>
+  );
+}

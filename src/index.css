@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 166 76% 9%;
+    --primary: 168 98% 20%; /* teal */
+    --primary-foreground: 0 0% 100%;
+    --accent: 28 90% 49%; /* orange */
+    --accent-foreground: 0 0% 100%;
+    --muted: 165 38% 94%;
+    --border: 168 80% 20% / 0.12;
+    --ring: 28 90% 49%;
+    --radius: 1rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+    line-height: 1.65;
+  }
+}
+
+@layer components {
+  /* Reusable hero gradient lifted from the legacy site */
+  .hero-gradient {
+    background:
+      linear-gradient(160deg, rgba(1, 68, 57, 0.86), rgba(1, 99, 82, 0.86)),
+      radial-gradient(circle at 80% 20%, rgba(241, 110, 11, 0.5), transparent 45%),
+      linear-gradient(135deg, #014439, #0a8a74);
+  }
+}

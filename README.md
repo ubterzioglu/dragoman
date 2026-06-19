@@ -1,44 +1,72 @@
-# DM Sea Kayak
+# Dragoman SeaKayak
 
-A static landing page for sea kayaking tours and lessons, packaged for one-click
-deployment on [Coolify](https://coolify.io).
+Multilingual (TR / EN / FR) marketing & reservation-request site for guided sea
+kayaking tours in the Kekova & Kaş region. Built with React + Vite + TypeScript +
+Tailwind, deployed as a static SPA via Docker/nginx on [Coolify](https://coolify.io).
 
-## Local preview
+## Tech stack
 
-Just open `index.html` in a browser, or serve it:
+- **React 18 + Vite 5 + TypeScript** (SPA)
+- **Tailwind CSS** + shadcn-style UI primitives + lucide-react + framer-motion
+- **react-router-dom 7** with locale-prefixed routes (`/:lang/...`)
+- **react-i18next** (TR default, EN, FR) + **react-helmet-async** (per-route SEO/hreflang/JSON-LD)
+- **react-hook-form + zod** reservation form → **Supabase** insert + WhatsApp deep link
+- **@supabase/supabase-js** (reservations + admin auth)
+
+## Local development
 
 ```bash
-# any static server works, e.g.
-python -m http.server 8080
-# then visit http://localhost:8080
+npm install
+npm run dev          # http://localhost:5173
+npm run build        # typecheck + production build to dist/
+npm run preview      # serve the built dist/
+npm test             # vitest unit tests
 ```
 
-## Run with Docker
+Create `.env.local` (gitignored) for Supabase:
+
+```
+VITE_SUPABASE_URL="https://<project>.supabase.co"
+VITE_SUPABASE_ANON_KEY="<anon-key>"
+```
+
+Only the **anon** (public) key belongs on the client. The `service_role` key must
+never be exposed with a `VITE_` prefix.
+
+## Database
+
+Apply `supabase/migrations/0001_reservations.sql` to create the
+`reservation_requests` table with RLS (anon insert, authenticated read/update).
+Create one admin user in Supabase Auth to access `/admin`.
+
+## Routes
+
+- `/:lang` home · `/:lang/turlar` tours · `/:lang/turlar/:slug` tour detail
+- `/:lang/ozel-turlar` · `/:lang/hakkimizda` · `/:lang/galeri` · `/:lang/yorumlar`
+  · `/:lang/iletisim` · `/:lang/sss`
+- `/admin` Supabase-backed reservations panel
+
+## Deploy on Coolify (Docker)
 
 ```bash
 docker build -t dmseakayak .
-docker run -p 8080:80 dmseakayak
-# visit http://localhost:8080
+docker run -p 8080:80 \
+  -e VITE_SUPABASE_URL="..." -e VITE_SUPABASE_ANON_KEY="..." \
+  dmseakayak                      # http://localhost:8080
 ```
 
-## Deploy on Coolify
-
-1. In Coolify, create a new **Resource → Application**.
-2. Choose **Public Repository** (or connect your GitHub) and point it at
-   `https://github.com/ubterzioglu/dmseakayak`.
-3. Set **Build Pack** to **Dockerfile** (the included `Dockerfile` is auto-detected).
-4. Coolify exposes the container's **port 80** — leave the default; map your domain
-   in the **Domains** field.
-5. Click **Deploy**. The built-in `HEALTHCHECK` lets Coolify confirm the app is live.
-
-Subsequent pushes to the default branch trigger automatic redeploys when
-**Auto Deploy** is enabled.
+The image is a multi-stage build (`node:22-alpine` → `nginx:1.27-alpine`).
+`docker-entrypoint-env.sh` writes `/env-config.js` at startup so Supabase public
+vars can be set at deploy time without rebuilding. In Coolify: Build Pack =
+Dockerfile, port 80, set the `VITE_` env vars in the panel.
 
 ## Files
 
-| File          | Purpose                                          |
-|---------------|--------------------------------------------------|
-| `index.html`  | The full single-page site (self-contained)       |
-| `Dockerfile`  | Builds an nginx image serving the static site    |
-| `nginx.conf`  | nginx server config (caching, gzip, headers)     |
-| `.dockerignore` | Keeps the image lean                           |
+| Path | Purpose |
+|------|---------|
+| `src/content/tours.ts` | Single typed source for the 3 tours (TR/EN/FR) |
+| `src/i18n/` | i18next init + locale strings |
+| `src/components/reservation/` | Reservation form, schema |
+| `src/pages/` | Route pages |
+| `supabase/migrations/` | Database schema + RLS |
+| `legacy/` | Previous static site (kept for reference) |

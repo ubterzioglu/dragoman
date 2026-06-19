@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Home",
+    "tours": "Tours",
+    "customTours": "Private Tours",
+    "about": "About",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "book": "Book now"
+  },
+  "hero": {
+    "title": "Meet the sea in Kekova",
+    "subtitle": "Paddle over the sunken city, swim in hidden bays, and discover the breathtaking Lycian coast by sea kayak.",
+    "ctaTours": "Explore tours",
+    "ctaBook": "Book now"
+  },
+  "common": {
+    "from": "from",
+    "perPerson": "per person",
+    "duration": "Duration",
+    "distance": "Distance",
+    "departure": "Departure",
+    "arrival": "Arrival",
+    "level": "Level",
+    "route": "Route",
+    "included": "What's included",
+    "highlights": "Highlights",
+    "itinerary": "Tour Itinerary",
+    "viewDetails": "View details",
+    "bookNow": "Book now",
+    "askQuestion": "Ask a question",
+    "loading": "Loading...",
+    "km": "km",
+    "hikingKm": "km hiking"
+  },
+  "level": {
+    "beginner": "Beginner-friendly",
+    "intermediate-advanced": "Intermediate / Advanced"
+  },
+  "whyChoose": {
+    "title": "Why Choose Us?",
+    "subtitle": "Small groups led by licensed expert guides — a safe and unforgettable experience."
+  },
+  "tours": {
+    "title": "Tours & Adventures",
+    "subtitle": "From calm coves to open-sea routes — options for every level."
+  },
+  "reservation": {
+    "title": "Reservation Request",
+    "subtitle": "Fill in the form and we'll get back to you shortly. You can also message us directly on WhatsApp.",
+    "tour": "Tour",
+    "selectTour": "Select a tour",
+    "date": "Date",
+    "partySize": "Party size",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Your message (optional)",
+    "submit": "Send request",
+    "submitting": "Sending...",
+    "successTitle": "Request received!",
+    "success": "We'll contact you shortly. Opening WhatsApp...",
+    "error": "Something went wrong. Please reach us on WhatsApp.",
+    "orWhatsapp": "or message on WhatsApp"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Contact us for availability and reservations.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "follow": "Follow us"
+  },
+  "footer": {
+    "tagline": "Guided sea kayaking tours in the Kekova & Kaş region.",
+    "rights": "All rights reserved.",
+    "quickLinks": "Quick links"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Part of Dragoman Turkey — pioneers of sea kayaking on the Kaş and Kekova coast.",
+    "eyebrow": "Who We Are",
+    "storyTitle": "The Dragoman SeaKayak Story",
+    "storyBody": "Dragoman SeaKayak was founded in Kaş, Antalya as part of Dragoman Turkey, one of Turkey's most established travel companies. Over the years we have guided hundreds of guests through the enchanting waters of Kekova — paddling over the Sunken City, exploring hidden coves along the Lycian coast, and anchoring in ancient harbors. Our mission has always been the same: to deliver deep, nature-and-history immersion in safe small groups.",
+    "guidesTitle": "Our Expert Guides",
+    "guidesBody": "All of our guides are licensed by the Turkish Ministry of Culture and Tourism. With comprehensive training in sea kayaking technique, first aid, and regional archaeology, our guides deliver a safe and enriching experience for every group. Groups are typically 8–12 people, ensuring personal attention for every guest.",
+    "safetyTitle": "Our Safety Standards",
+    "safetyBody": "All equipment is serviced regularly and meets EU safety standards. Every kayak is supplied with a life jacket, helmet, and dry bag. Routes are updated in real time to match weather conditions — the safety of our guests always comes first."
+  },
+  "custom": {
+    "title": "Private & Custom Tours",
+    "subtitle": "Fully personalised sea kayaking experiences designed around you and your group.",
+    "eyebrow": "Just for You",
+    "heroTitle": "You Choose the Route",
+    "heroSubtitle": "From a family holiday to a corporate outing, a romantic getaway to a multi-day expedition — designed for every request.",
+    "whyTitle": "Why Book a Private Tour?",
+    "feature1Title": "Personalised Route",
+    "feature1Body": "We design a custom itinerary across the coves of Kekova, Kaş and beyond. Plan your route together with your guide.",
+    "feature2Title": "Private Guide",
+    "feature2Body": "The group is yours alone. Your guide dedicates all their expertise and attention to you.",
+    "feature3Title": "Flexible Dates & Duration",
+    "feature3Body": "From a day trip to a multi-day expedition, the schedule is yours. Book early to lock in your preferred date.",
+    "feature4Title": "Families & Groups",
+    "feature4Body": "Suitable for all ages including children. Route and pace adjusted to group size and experience level.",
+    "ctaContact": "Get a quote",
+    "ctaWhatsapp": "Message on WhatsApp"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know before you paddle.",
+    "eyebrow": "FAQ"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Moments captured on the magical waters of Kekova.",
+    "eyebrow": "Photos"
+  },
+  "reviews": {
+    "title": "Guest Reviews",
+    "subtitle": "The Dragoman SeaKayak experience through the eyes of our guests.",
+    "eyebrow": "Reviews",
+    "filterAll": "All",
+    "filterFeatured": "Featured",
+    "sortNewest": "Newest first",
+    "ratingLabel": "Rating",
+    "featuredBadge": "Featured",
+    "filterByLang": "Filter by language"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "subtitle": "The page you are looking for does not exist or has been moved.",
+    "cta": "Back to home"
+  }
+}
