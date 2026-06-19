@@ -3,6 +3,7 @@ FROM nginx:1.27-alpine
 
 # Serve our static files
 COPY index.html /usr/share/nginx/html/index.html
+COPY logo.png /usr/share/nginx/html/logo.png
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Coolify health checks and proxies expect the app on port 80
