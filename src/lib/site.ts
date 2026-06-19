@@ -19,7 +19,7 @@ export const SITE = {
   parentBrand: "Dragoman Turkey",
 } as const;
 
-export const LOCALES = ["tr", "en", "fr"] as const;
+export const LOCALES = ["tr", "en", "fr", "ru"] as const;
 export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = "tr";
 

@@ -5,11 +5,13 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://dragomanseakayak.com/tr"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dragomanseakayak.com/en"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://dragomanseakayak.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dragomanseakayak.com/ru"/>
   </url>
   <url><loc>https://dragomanseakayak.com/tr/turlar</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://dragomanseakayak.com/tr/turlar"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dragomanseakayak.com/en/turlar"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://dragomanseakayak.com/fr/turlar"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dragomanseakayak.com/ru/turlar"/>
   </url>
   <url><loc>https://dragomanseakayak.com/tr/turlar/kekova-classic</loc></url>
   <url><loc>https://dragomanseakayak.com/tr/turlar/kekova-west</loc></url>
