@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DM Sea Kayak — guided sea kayaking tours, lessons, and unforgettable coastal adventures." />
+  <title>DM Sea Kayak — Coastal Adventures</title>
+  <style>
+    :root {
+      --deep: #053b50;
+      --sea: #176b87;
+      --surf: #64ccc5;
+      --foam: #eef5ff;
+      --sand: #f6efe3;
+      --ink: #0b2a36;
+      --max: 1080px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--foam);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .wrap { width: min(var(--max), 92%); margin-inline: auto; }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(5, 59, 80, 0.92);
+      backdrop-filter: blur(8px);
+      color: #fff;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
+    .brand { font-weight: 800; letter-spacing: 0.5px; font-size: 1.2rem; display: flex; gap: 0.5rem; align-items: center; }
+    .brand span { color: var(--surf); }
+    .nav-links { display: flex; gap: 1.5rem; font-size: 0.95rem; }
+    .nav-links a:hover { color: var(--surf); }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 78vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: #fff;
+      background:
+        linear-gradient(180deg, rgba(5,59,80,0.55), rgba(23,107,135,0.65)),
+        radial-gradient(circle at 30% 20%, #64ccc5 0%, transparent 45%),
+        linear-gradient(135deg, #053b50, #176b87);
+      overflow: hidden;
+    }
+    .hero-content { padding: 4rem 0; }
+    .hero h1 { font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1.1; font-weight: 800; }
+    .hero p { font-size: clamp(1rem, 2.4vw, 1.3rem); margin-top: 1rem; opacity: 0.95; }
+    .cta {
+      display: inline-block;
+      margin-top: 2rem;
+      background: var(--surf);
+      color: var(--deep);
+      font-weight: 700;
+      padding: 0.85rem 2rem;
+      border-radius: 999px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 10px 30px rgba(100,204,197,0.35);
+    }
+    .cta:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(100,204,197,0.5); }
+
+    /* Sections */
+    section { padding: 4.5rem 0; }
+    .section-title { font-size: clamp(1.6rem, 4vw, 2.4rem); color: var(--deep); margin-bottom: 0.5rem; }
+    .section-sub { color: var(--sea); margin-bottom: 2.5rem; max-width: 60ch; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 1.8rem;
+      box-shadow: 0 8px 24px rgba(5,59,80,0.08);
+      border: 1px solid rgba(23,107,135,0.08);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(5,59,80,0.14); }
+    .card .icon { font-size: 2rem; }
+    .card h3 { color: var(--deep); margin: 0.8rem 0 0.4rem; }
+    .card .price { margin-top: 1rem; font-weight: 800; color: var(--sea); }
+
+    .band { background: var(--sand); }
+
+    .steps { counter-reset: step; }
+    .step { display: flex; gap: 1rem; margin-bottom: 1.4rem; }
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      flex: 0 0 auto;
+      width: 2.4rem; height: 2.4rem;
+      display: grid; place-items: center;
+      background: var(--sea); color: #fff;
+      border-radius: 50%; font-weight: 800;
+    }
+
+    /* Contact */
+    .contact-box {
+      background: var(--deep);
+      color: #fff;
+      border-radius: 22px;
+      padding: 3rem;
+      text-align: center;
+    }
+    .contact-box h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); }
+    .contact-box p { opacity: 0.9; margin-top: 0.5rem; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 1.8rem; }
+    .pill {
+      border: 1px solid var(--surf);
+      color: var(--surf);
+      padding: 0.7rem 1.4rem;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .pill:hover { background: var(--surf); color: var(--deep); }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 0;
+      color: var(--sea);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">🛶 DM<span>SeaKayak</span></div>
+      <nav class="nav-links">
+        <a href="#tours">Tours</a>
+        <a href="#how">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-content">
+        <h1>Paddle into the open sea</h1>
+        <p>Guided sea kayaking tours, lessons, and coastal escapes for every level. Salt on your skin, horizon ahead.</p>
+        <a class="cta" href="#contact">Book your adventure</a>
+      </div>
+    </section>
+
+    <section id="tours">
+      <div class="wrap">
+        <h2 class="section-title">Tours &amp; Experiences</h2>
+        <p class="section-sub">From calm-water beginners' trips to multi-day expedition routes along the coastline.</p>
+        <div class="grid">
+          <div class="card">
+            <div class="icon">🌅</div>
+            <h3>Sunrise Coastal Tour</h3>
+            <p>A gentle 2-hour paddle along sheltered bays as the sun comes up. Perfect for first-timers.</p>
+            <div class="price">from €45 / person</div>
+          </div>
+          <div class="card">
+            <div class="icon">🏝️</div>
+            <h3>Island Hopping</h3>
+            <p>Half-day guided route between hidden coves and secluded beaches. Snack stop included.</p>
+            <div class="price">from €85 / person</div>
+          </div>
+          <div class="card">
+            <div class="icon">🌊</div>
+            <h3>Expedition &amp; Skills</h3>
+            <p>Multi-day trips and technique clinics for paddlers ready to go further and faster.</p>
+            <div class="price">custom pricing</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="band">
+      <div class="wrap">
+        <h2 class="section-title">How it works</h2>
+        <p class="section-sub">No experience needed — we handle the gear, the route, and the safety briefing.</p>
+        <div class="steps">
+          <div class="step"><div><strong>Pick a tour</strong><br>Choose the experience that matches your level and schedule.</div></div>
+          <div class="step"><div><strong>Get equipped</strong><br>Kayak, paddle, and life jacket provided. Just bring sunscreen.</div></div>
+          <div class="step"><div><strong>Paddle out</strong><br>A certified guide leads the way and shares the best spots.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <h2>Ready to hit the water?</h2>
+          <p>Get in touch to check availability and reserve your spot.</p>
+          <div class="contact-links">
+            <a class="pill" href="mailto:hello@dmseakayak.com">✉️ hello@dmseakayak.com</a>
+            <a class="pill" href="tel:+10000000000">📞 +1 000 000 0000</a>
+            <a class="pill" href="#">📍 Find us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> DM Sea Kayak. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
