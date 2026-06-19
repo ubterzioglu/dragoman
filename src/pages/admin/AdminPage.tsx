@@ -5,6 +5,7 @@ import ReservationsPanel from "./ReservationsPanel";
 import RevisionsPanel from "./RevisionsPanel";
 import BlogPanel from "./BlogPanel";
 import ReviewsPanel from "./ReviewsPanel";
+import UpdatesPanel from "./UpdatesPanel";
 
 // ─── Login form ──────────────────────────────────────────────────────────────
 
@@ -76,13 +77,14 @@ function AdminLogin({ onLogin, error, loading }: LoginFormProps) {
 
 // ─── Tabs ──────────────────────────────────────────────────────────────────────
 
-type TabKey = "reservations" | "revisions" | "blog" | "reviews";
+type TabKey = "reservations" | "revisions" | "blog" | "reviews" | "updates";
 
 const TABS: { key: TabKey; label: string }[] = [
   { key: "reservations", label: "Rezervasyonlar" },
   { key: "revisions", label: "Revizyonlar" },
   { key: "blog", label: "Blog" },
   { key: "reviews", label: "Yorumlar" },
+  { key: "updates", label: "Güncellemeler" },
 ];
 
 // ─── Main admin page ─────────────────────────────────────────────────────────
@@ -201,6 +203,7 @@ export default function AdminPage() {
         {tab === "revisions" && <RevisionsPanel />}
         {tab === "blog" && <BlogPanel />}
         {tab === "reviews" && <ReviewsPanel />}
+        {tab === "updates" && <UpdatesPanel />}
       </div>
     </div>
   );
