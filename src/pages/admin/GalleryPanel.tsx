@@ -29,6 +29,9 @@ export default function GalleryPanel({ infoSlot }: AdminPanelProps) {
   const [file, setFile] = useState<File | null>(null);
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [caption, setCaption] = useState("");
+  const [captionEn, setCaptionEn] = useState("");
+  const [captionFr, setCaptionFr] = useState("");
+  const [captionRu, setCaptionRu] = useState("");
   const [alt, setAlt] = useState("");
   const [published, setPublished] = useState(true);
   const [sortOrder, setSortOrder] = useState(0);
@@ -54,6 +57,9 @@ export default function GalleryPanel({ infoSlot }: AdminPanelProps) {
     setFile(null);
     setImageUrl(null);
     setCaption("");
+    setCaptionEn("");
+    setCaptionFr("");
+    setCaptionRu("");
     setAlt("");
     setPublished(true);
     setSortOrder(0);
@@ -64,6 +70,9 @@ export default function GalleryPanel({ infoSlot }: AdminPanelProps) {
     setFile(null);
     setImageUrl(g.image_url);
     setCaption(g.caption ?? "");
+    setCaptionEn(g.caption_en ?? "");
+    setCaptionFr(g.caption_fr ?? "");
+    setCaptionRu(g.caption_ru ?? "");
     setAlt(g.alt ?? "");
     setPublished(g.published);
     setSortOrder(g.sort_order);
@@ -84,6 +93,9 @@ export default function GalleryPanel({ infoSlot }: AdminPanelProps) {
         {
           image_url: finalUrl,
           caption: caption.trim() || null,
+          caption_en: captionEn.trim() || null,
+          caption_fr: captionFr.trim() || null,
+          caption_ru: captionRu.trim() || null,
           alt: alt.trim() || caption.trim() || null,
           published,
           sort_order: Number.isFinite(sortOrder) ? sortOrder : 0,
@@ -148,16 +160,57 @@ export default function GalleryPanel({ infoSlot }: AdminPanelProps) {
                 />
               )}
             </div>
-            <div>
-              <label className="mb-1 block text-sm font-semibold text-teal-deep">
+            <div className="space-y-3 rounded-2xl border border-teal/10 bg-foam/40 p-4">
+              <p className="text-sm font-semibold text-teal-deep">
                 Başlık / Açıklama (foto üzerinde görünür)
-              </label>
-              <input
-                value={caption}
-                onChange={(e) => setCaption(e.target.value)}
-                placeholder="örn. Kekova Batık Şehir"
-                className="w-full rounded-2xl border border-teal/15 bg-[#fcfbf8] px-4 py-3 outline-none focus:border-orange focus:ring-4 focus:ring-orange/10"
-              />
+              </p>
+              <p className="text-[11px] text-teal/50">
+                Türkçe varsayılandır. Diğer diller boşsa o dilde Türkçe başlık gösterilir.
+              </p>
+              <div>
+                <label className="mb-1 block text-xs font-semibold uppercase tracking-[0.12em] text-teal/60">
+                  Türkçe (varsayılan)
+                </label>
+                <input
+                  value={caption}
+                  onChange={(e) => setCaption(e.target.value)}
+                  placeholder="örn. Kekova Batık Şehir"
+                  className="w-full rounded-2xl border border-teal/15 bg-[#fcfbf8] px-4 py-3 outline-none focus:border-orange focus:ring-4 focus:ring-orange/10"
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs font-semibold uppercase tracking-[0.12em] text-teal/60">
+                  English
+                </label>
+                <input
+                  value={captionEn}
+                  onChange={(e) => setCaptionEn(e.target.value)}
+                  placeholder="e.g. Kekova Sunken City"
+                  className="w-full rounded-2xl border border-teal/15 bg-[#fcfbf8] px-4 py-3 outline-none focus:border-orange focus:ring-4 focus:ring-orange/10"
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs font-semibold uppercase tracking-[0.12em] text-teal/60">
+                  Français
+                </label>
+                <input
+                  value={captionFr}
+                  onChange={(e) => setCaptionFr(e.target.value)}
+                  placeholder="ex. Cité engloutie de Kekova"
+                  className="w-full rounded-2xl border border-teal/15 bg-[#fcfbf8] px-4 py-3 outline-none focus:border-orange focus:ring-4 focus:ring-orange/10"
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs font-semibold uppercase tracking-[0.12em] text-teal/60">
+                  Русский
+                </label>
+                <input
+                  value={captionRu}
+                  onChange={(e) => setCaptionRu(e.target.value)}
+                  placeholder="напр. Затонувший город Кекова"
+                  className="w-full rounded-2xl border border-teal/15 bg-[#fcfbf8] px-4 py-3 outline-none focus:border-orange focus:ring-4 focus:ring-orange/10"
+                />
+              </div>
             </div>
             <div>
               <label className="mb-1 block text-sm font-semibold text-teal-deep">

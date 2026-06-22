@@ -83,7 +83,7 @@ function Lightbox({ images, index, onClose, onPrev, onNext }: LightboxProps) {
 }
 
 export default function Gallery() {
-  const { t } = useLang();
+  const { t, locale } = useLang();
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [images, setImages] = useState<GalleryImage[]>(FALLBACK_IMAGES);
 
@@ -91,18 +91,25 @@ export default function Gallery() {
     let active = true;
     void fetchPublishedGallery().then((rows) => {
       if (!active || rows.length === 0) return;
+      // Pick the caption for the active locale, falling back to the Turkish
+      // default when that language is empty.
+      const localized = { en: "caption_en", fr: "caption_fr", ru: "caption_ru" } as const;
       setImages(
-        rows.map((r) => ({
-          src: r.image_url,
-          alt: r.alt ?? r.caption ?? "",
-          caption: r.caption ?? "",
-        })),
+        rows.map((r) => {
+          const key = locale === "tr" ? null : localized[locale];
+          const caption = (key ? r[key] : null) ?? r.caption ?? "";
+          return {
+            src: r.image_url,
+            alt: r.alt ?? caption,
+            caption,
+          };
+        }),
       );
     });
     return () => {
       active = false;
     };
-  }, []);
+  }, [locale]);
 
   const IMAGES = images;
 

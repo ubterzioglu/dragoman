@@ -319,7 +319,12 @@ export async function fetchPublishedReviews(): Promise<ReviewRow[]> {
 export interface GalleryRow {
   id: string;
   image_url: string;
+  /** Turkish caption (default locale). */
   caption: string | null;
+  /** Per-language captions; null falls back to the Turkish `caption`. */
+  caption_en: string | null;
+  caption_fr: string | null;
+  caption_ru: string | null;
   alt: string | null;
   published: boolean;
   sort_order: number;
@@ -329,6 +334,9 @@ export interface GalleryRow {
 export interface GalleryInput {
   image_url: string;
   caption: string | null;
+  caption_en: string | null;
+  caption_fr: string | null;
+  caption_ru: string | null;
   alt: string | null;
   published: boolean;
   sort_order: number;
