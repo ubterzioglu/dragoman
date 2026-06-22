@@ -36,7 +36,7 @@ export default function About() {
           <div className="overflow-hidden rounded-2xl">
             <img
               src="/seakayakog.jpg"
-              alt="Dragoman SeaKayak — Kekova"
+              alt="Dragoman Diving & Outdoors — Kekova"
               className="h-72 w-full object-cover md:h-96"
             />
           </div>

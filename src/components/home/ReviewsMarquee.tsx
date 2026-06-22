@@ -5,7 +5,7 @@ import { useLang } from "@/hooks/useLang";
 import { fetchPublishedReviews, type ReviewRow } from "@/hooks/useAdminContent";
 
 // TODO: Kullanıcının Google Haritalar işletme linkini buraya koy (gerçek link bekleniyor).
-const GOOGLE_REVIEW_URL = "https://www.google.com/maps/search/?api=1&query=Dragoman+SeaKayak+Kas";
+const GOOGLE_REVIEW_URL = "https://www.google.com/maps/search/?api=1&query=Dragoman+Diving+Outdoors+Kas";
 
 function Stars({ rating }: { rating: number }) {
   return (

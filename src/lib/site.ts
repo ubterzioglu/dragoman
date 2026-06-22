@@ -4,16 +4,19 @@
  * docs/ICERIK (Dragoman Turkey, Kaş/Antalya).
  */
 export const SITE = {
-  name: "Dragoman SeaKayak",
+  name: "Dragoman Diving & Outdoors",
+  shortName: "Dragoman",
   domain: "https://dragomanturkey.online",
   ogImage: "https://dragomanturkey.online/seakayakog.jpg",
-  // Contact (from the hotel-presentation PDF / business records)
+  // Contact (from dragoman-turkey.com — Dragoman Travel Agency / TÜRSAB A4615).
   phone: "+90 242 836 3614",
-  // WhatsApp number in international digits, no "+" or spaces. TODO: confirm a
-  // mobile WhatsApp line — falls back to the landline for now.
-  whatsapp: "902428363614",
+  mobile: "+90 533 290 14 63",
+  fax: "+90 242 836 3615",
+  // WhatsApp number in international digits, no "+" or spaces (the mobile line).
+  whatsapp: "905332901463",
   email: "info@dragomanturkey.online",
   address: "Uzunçarşı Cad. No:15, Kaş 07580, Antalya, Türkiye",
+  tursab: "A4615",
   instagram: "https://instagram.com/dragomanseakayak",
   facebook: "https://facebook.com/dragomanseakayak",
   parentBrand: "Dragoman Turkey",

@@ -40,7 +40,7 @@ export function Hero() {
           />
           <img
             src="/transparanlogo.png"
-            alt="Dragoman SeaKayak"
+            alt="Dragoman Diving & Outdoors"
             className="relative h-56 w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.15)] md:h-72 lg:h-[22rem]"
             onError={(e) => (e.currentTarget.style.display = "none")}
           />

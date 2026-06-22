@@ -1,7 +1,8 @@
-# Dragoman SeaKayak
+# Dragoman Diving & Outdoors
 
-Multilingual (TR / EN / FR) marketing & reservation-request site for guided sea
-kayaking tours in the Kekova & Kaş region. Built with React + Vite + TypeScript +
+Multilingual (TR / EN / FR) marketing & reservation-request site for Dragoman
+Diving & Outdoors in Kaş, Antalya — scuba diving (SSI center), guided Kekova sea
+kayak tours, and outdoor activities. Built with React + Vite + TypeScript +
 Tailwind, deployed as a static SPA via Docker/nginx on [Coolify](https://coolify.io).
 
 ## Tech stack

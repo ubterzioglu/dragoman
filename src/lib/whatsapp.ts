@@ -12,7 +12,7 @@ export interface WhatsappReservation {
  * Pure function — unit tested. Empty fields are omitted from the message.
  */
 export function buildWhatsappLink(data: WhatsappReservation = {}): string {
-  const lines = ["Merhaba Dragoman SeaKayak,"];
+  const lines = ["Merhaba Dragoman Diving & Outdoors,"];
   if (data.tourTitle) lines.push(`Tur: ${data.tourTitle}`);
   if (data.date) lines.push(`Tarih: ${data.date}`);
   if (data.partySize) lines.push(`Kişi sayısı: ${data.partySize}`);
