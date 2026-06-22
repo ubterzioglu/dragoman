@@ -22,15 +22,15 @@ export function HomeServices() {
         title={t("homeServices.title")}
         subtitle={t("homeServices.subtitle")}
       />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
         {services.map(({ icon: Icon, to, label, desc }) => (
           <Link
             key={to}
             to={localePath(to)}
-            className="group flex flex-col rounded-2xl border border-teal/10 bg-white p-6 shadow-[0_10px_30px_rgba(1,68,57,0.06)] transition-transform hover:-translate-y-1"
+            className="group flex flex-col rounded-2xl border border-teal/10 bg-white p-4 shadow-[0_10px_30px_rgba(1,68,57,0.06)] transition-transform hover:-translate-y-1 sm:p-6"
           >
-            <Icon className="mb-3 h-8 w-8 text-orange" aria-hidden="true" />
-            <h3 className="mb-1 text-lg font-bold text-teal-deep group-hover:text-orange">{label}</h3>
+            <Icon className="mb-2 h-7 w-7 text-orange sm:mb-3 sm:h-8 sm:w-8" aria-hidden="true" />
+            <h3 className="mb-1 text-base font-bold text-teal-deep group-hover:text-orange sm:text-lg">{label}</h3>
             <p className="text-sm text-teal/75">{desc}</p>
           </Link>
         ))}
