@@ -93,7 +93,7 @@ export default function Gallery() {
       if (!active || rows.length === 0) return;
       // Pick the caption for the active locale, falling back to the Turkish
       // default when that language is empty.
-      const localized = { en: "caption_en", fr: "caption_fr", ru: "caption_ru" } as const;
+      const localized = { en: "caption_en", fr: "caption_fr" } as const;
       setImages(
         rows.map((r) => {
           const key = locale === "tr" ? null : localized[locale];

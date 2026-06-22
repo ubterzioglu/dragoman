@@ -4,14 +4,12 @@ import { DEFAULT_LOCALE, LOCALES } from "@/lib/site";
 import tr from "./locales/tr/common.json";
 import en from "./locales/en/common.json";
 import fr from "./locales/fr/common.json";
-import ru from "./locales/ru/common.json";
 
 void i18n.use(initReactI18next).init({
   resources: {
     tr: { common: tr },
     en: { common: en },
     fr: { common: fr },
-    ru: { common: ru },
   },
   lng: DEFAULT_LOCALE,
   fallbackLng: DEFAULT_LOCALE,

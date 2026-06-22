@@ -35,13 +35,11 @@ const INCLUDED_RESTAURANT: Localized<string[]> = {
   tr: ["Rehber", "Kayak ve tüm ekipman", "Kaş'tan gidiş-dönüş transfer", "Restoranda öğle yemeği", "Atıştırmalıklar"],
   en: ["Guide", "Kayaks and full equipment", "From/to Kaş transfers", "Lunch at restaurant", "Snacks"],
   fr: ["Guide", "Kayaks et équipement complet", "Transferts aller-retour depuis Kaş", "Déjeuner au restaurant", "Collations"],
-  ru: ["Гид", "Каяки и всё снаряжение", "Трансфер из/до Каша", "Обед в ресторане", "Закуски"],
 };
 const INCLUDED_LUNCHBOX: Localized<string[]> = {
   tr: ["Rehber", "Kayak ve tüm ekipman", "Kaş'tan gidiş-dönüş transfer", "Öğle yemeği kutusu", "Atıştırmalıklar"],
   en: ["Guide", "Kayaks and full equipment", "From/to Kaş transfers", "Lunch box", "Snacks"],
   fr: ["Guide", "Kayaks et équipement complet", "Transferts aller-retour depuis Kaş", "Panier-repas", "Collations"],
-  ru: ["Гид", "Каяки и всё снаряжение", "Трансфер из/до Каша", "Ланч-бокс", "Закуски"],
 };
 
 export const TOURS: Tour[] = [
@@ -56,18 +54,16 @@ export const TOURS: Tour[] = [
     routeStops: ["Üçağız (Theimussa)", "Kekova Island", "Tersane Bay", "Sunken City", "Simena"],
     heroImage: "/images/tours/kekova-classic.jpg",
     gallery: [],
-    title: { tr: "Kekova Classic", en: "Kekova Classic", fr: "Kekova Classic", ru: "Кекова Классик" },
+    title: { tr: "Kekova Classic", en: "Kekova Classic", fr: "Kekova Classic" },
     tagline: {
       tr: "Kekova'nın ünlü Batık Şehir kıyısında deniz kayağı — her seviyeye uygun.",
       en: "Sea kayaking along Kekova's famous Sunken City coastline — for all levels.",
       fr: "Kayak de mer le long de la célèbre côte de la Cité engloutie de Kekova — pour tous les niveaux.",
-      ru: "Морской каякинг вдоль знаменитого Затонувшего города Кековы — для всех уровней.",
     },
     highlights: {
       tr: ["Batık Şehir kıyısı", "Tersane Koyu'nda yüzme molası", "Simena köyü ve kale manzarası", "Başlangıç dostu rota"],
       en: ["Sunken City coastline", "Tersane Bay swimming break", "Simena village and castle views", "Beginner-friendly route"],
       fr: ["Côte de la Cité engloutie", "Pause baignade à la baie de Tersane", "Village de Simena et vue sur le château", "Itinéraire pour débutants"],
-      ru: ["Побережье Затонувшего города", "Купание в бухте Терсане", "Деревня Симена и вид на крепость", "Маршрут для начинающих"],
     },
     included: INCLUDED_RESTAURANT,
     whyChoose: {
@@ -91,13 +87,6 @@ export const TOURS: Tour[] = [
         "Expérience en petit groupe avec des guides diplômés anglophones.",
         "Paysages à couper le souffle — eaux cristallines et criques cachées.",
         "Un mélange parfait d'aventure et de culture.",
-      ],
-      ru: [
-        "Исследуйте древнюю историю — гребите над затонувшим ликийским городом и посетите крепость.",
-        "Подходит для всех уровней — опыт не требуется.",
-        "Опыт в малой группе с лицензированными англоговорящими гидами.",
-        "Захватывающие пейзажи — кристально чистая вода и скрытые бухты.",
-        "Идеальное сочетание приключения и культуры.",
       ],
     },
     itinerary: {
@@ -137,18 +126,6 @@ export const TOURS: Tour[] = [
         { icon: "⛵", title: "Retour en pagaie vers Üçağız", body: "Passez devant d'anciens tombeaux lyciens cachés dans les rochers sur le chemin du retour." },
         { icon: "🚐", title: "Retour à Kaş", body: "Une route panoramique de 40 minutes vers Kaş après une brève conclusion à Üçağız." },
       ],
-      ru: [
-        { icon: "🚶", title: "Место встречи: Царская гробница Каша — 07:30", body: "Встретьте опытного гида и других участников. На полуострове Каш возможен трансфер." },
-        { icon: "🚐", title: "Поездка в Üçağız (40 мин)", body: "Живописная поездка по средиземноморским пейзажам с остановкой за водой и припасами, прибытие в очаровательную рыбацкую деревню Üçağız." },
-        { icon: "🛶", title: "Начало морского каякинга", body: "Получите каяки, спасжилеты, гермомешки и вёсла, а также подробный инструктаж по гребле и безопасности. Снаряжение для снорклинга предоставляется." },
-        { icon: "🏝", title: "Гребля к бухте Терсане (30 мин)", body: "Пройдите мимо небольших островов с римскими и ликийскими руинами к бухте Терсане с древней верфью. Короткий перерыв с закусками." },
-        { icon: "🏛", title: "Затонувший город Кекова", body: "Гребите цепочкой вдоль знаменитого Затонувшего города, наблюдая под кристально чистой водой полузатопленные стены, лестницы и древнюю гавань. Купание в этой охраняемой зоне запрещено." },
-        { icon: "🏰", title: "Симена — деревня с крепостью", body: "Переправьтесь через бухту в Симену (Калекёй), доступную только на лодке или каяке, с крепостью на вершине и панорамными видами." },
-        { icon: "🍽", title: "Обед с потрясающим видом", body: "Вкусный обед в ресторане у воды — рыба на гриле, кёфте, курица на гриле или вегетарианский/веганский вариант, с домашним картофелем фри и свежим салатом." },
-        { icon: "⏳", title: "Свободное время в Симене (1 час)", body: "Осмотрите руины крепости, прогуляйтесь по цветущим каменным улочкам, попробуйте знаменитое домашнее мороженое или искупайтесь." },
-        { icon: "⛵", title: "Обратная гребля в Üçağız", body: "На обратном пути пройдите мимо древних ликийских гробниц, спрятанных среди скал." },
-        { icon: "🚐", title: "Возвращение в Каш", body: "Живописная 40-минутная дорога в Каш после короткого завершения в Üçağız." },
-      ],
     },
   },
   {
@@ -162,18 +139,16 @@ export const TOURS: Tour[] = [
     routeStops: ["Üçağız (Theimussa)", "Kekova Sound & Islands", "Polemos", "Sıcak", "Aperlai"],
     heroImage: "/images/tours/kekova-west.jpg",
     gallery: [],
-    title: { tr: "Kekova West", en: "Kekova West", fr: "Kekova West", ru: "Кекова Запад" },
+    title: { tr: "Kekova West", en: "Kekova West", fr: "Kekova West" },
     tagline: {
       tr: "Aperlai ve ıssız kıyı şeridiyle daha uzun bir Kekova rotası.",
       en: "A longer Kekova route with Aperlai and remote coastline.",
       fr: "Un itinéraire de Kekova plus long avec Aperlai et une côte sauvage.",
-      ru: "Более длинный маршрут Кековы с Аперлаи и безлюдным побережьем.",
     },
     highlights: {
       tr: ["Kekova Boğazı ve adaları", "Aperlai antik kenti", "Deniz kayağı ve kısa yürüyüş", "Tam gün rota"],
       en: ["Kekova Sound and islands", "Aperlai ancient site", "Sea kayaking and short walk", "Full-day route"],
       fr: ["Détroit de Kekova et ses îles", "Site antique d'Aperlai", "Kayak de mer et courte marche", "Itinéraire d'une journée"],
-      ru: ["Пролив Кекова и острова", "Древний город Аперлаи", "Каякинг и короткая прогулка", "Маршрут на целый день"],
     },
     included: INCLUDED_RESTAURANT,
     whyChoose: {
@@ -200,14 +175,6 @@ export const TOURS: Tour[] = [
         "Randonnée sur une courte section de la célèbre Voie lycienne.",
         "Option voile en kayak pour une expérience grisante.",
         "Déjeuner local authentique dans une maison de pêcheur.",
-      ],
-      ru: [
-        "Гребите через два легендарных затонувших города — Кекова и Аперлаи.",
-        "Опыт в малой группе с профессиональными гидами.",
-        "Снорклинг над руинами в бухте Терсане и затонувшими руинами Аперлаи.",
-        "Поход по короткому участку знаменитой Ликийской тропы.",
-        "Опция с парусом на каяке для захватывающего опыта под силой ветра.",
-        "Аутентичный местный обед в доме рыбака.",
       ],
     },
     itinerary: {
@@ -244,17 +211,6 @@ export const TOURS: Tour[] = [
         { icon: "⛵", title: "Voile en kayak (selon météo)", body: "Hissez de petites voiles et laissez le vent vous ramener — une expérience unique et grisante." },
         { icon: "🚐", title: "Retour à Kaş", body: "Temps libre à Üçağız pendant le nettoyage de l'équipement, puis 40 min de route. Arrivée 17h00–17h30." },
       ],
-      ru: [
-        { icon: "🚶", title: "Место встречи: Царская гробница Каша — 07:30", body: "Встретьте гида и группу. Трансфер на полуострове Каш; трансфер из Калкана за доплату 10 €." },
-        { icon: "🚐", title: "Поездка в Üçağız (40 мин)", body: "Живописная поездка с остановкой за припасами, прибытие в деревню Üçağız — ворота Кековы." },
-        { icon: "🛶", title: "Начало морского каякинга", body: "Полное снаряжение и подробный инструктаж по безопасности перед стартом." },
-        { icon: "🏝", title: "Симена и Затонувший город Кекова", body: "Гребите к Симене, остановитесь у культовой полузатопленной ликийской гробницы, затем пройдите над затонувшим городом перед купанием в бухте Терсане и далее к Аперлаи." },
-        { icon: "🍽", title: "Обед в доме рыбака", body: "Домашняя еда: рыба на гриле, лучший картофель фри в регионе и свежий средиземноморский салат." },
-        { icon: "🥾", title: "Короткий поход по Ликийской тропе", body: "Прогуляйтесь среди древних руин ради панорамных видов побережья со стен Аперлаи." },
-        { icon: "🏛", title: "Откройте Аперлаи", body: "Снорклинг над затонувшими гаванями и постройками; узнайте о древнем производстве царского пурпура." },
-        { icon: "⛵", title: "Парус на каяке (по погоде)", body: "Поднимите небольшие паруса и позвольте ветру унести вас обратно — уникальный, захватывающий опыт." },
-        { icon: "🚐", title: "Возвращение в Каш", body: "Свободное время в Üçağız, пока чистят снаряжение, затем 40-минутная дорога. Прибытие 17:00–17:30." },
-      ],
     },
   },
   {
@@ -267,18 +223,16 @@ export const TOURS: Tour[] = [
     routeStops: ["Üçağız", "Simena", "Hamidiye Bay", "Aşırlı Island", "Çayağzı (Andriake)"],
     heroImage: "/images/tours/kekova-east.jpg",
     gallery: [],
-    title: { tr: "Kekova East", en: "Kekova East", fr: "Kekova East", ru: "Кекова Восток" },
+    title: { tr: "Kekova East", en: "Kekova East", fr: "Kekova East" },
     tagline: {
       tr: "Çayağzı ve Demre'ye doğru tam gün doğu Kekova rotası.",
       en: "A full-day eastern Kekova route towards Çayağzı and Demre.",
       fr: "Un itinéraire d'une journée vers l'est de Kekova, vers Çayağzı et Demre.",
-      ru: "Маршрут на целый день в восточную Кекову — к Чаягзы и Демре.",
     },
     highlights: {
       tr: ["Theimussa ve Simena", "Hamidiye Koyu", "Aşırlı Adası korsan mağarası", "Andriake limanında bitiş"],
       en: ["Theimussa and Simena", "Hamidiye Bay", "Aşırlı Island pirate cave", "Finish at Andriake harbor"],
       fr: ["Theimussa et Simena", "Baie de Hamidiye", "Grotte des pirates de l'île d'Aşırlı", "Fin au port d'Andriake"],
-      ru: ["Теймусса и Симена", "Бухта Хамидие", "Пиратская пещера острова Аширлы", "Финиш в гавани Андриаке"],
     },
     included: INCLUDED_LUNCHBOX,
     whyChoose: {
@@ -305,14 +259,6 @@ export const TOURS: Tour[] = [
         "Observez les tortues de mer le long du ruisseau d'Andriake.",
         "Plus de temps de pagaie avec des kayakistes expérimentés.",
         "Expérience en petit groupe avec des guides experts.",
-      ],
-      ru: [
-        "Гребите над затонувшим ликийским городом.",
-        "Плавайте и занимайтесь снорклингом в скрытых бухтах.",
-        "Пройдите мимо морской пещеры, бывшего пристанища средиземноморского тюленя-монаха.",
-        "Наблюдайте за морскими черепахами вдоль ручья Андриаке.",
-        "Больше времени на гребле с опытными каякерами.",
-        "Опыт в малой группе с опытными гидами.",
       ],
     },
     itinerary: {
@@ -348,17 +294,6 @@ export const TOURS: Tour[] = [
         { icon: "🦭", title: "Pagaie près d'une grotte marine", body: "Longez une grotte mystérieuse près de l'île d'Aşırlı, ancien refuge du phoque moine — et peut-être apercevez des tortues caouannes." },
         { icon: "🐢", title: "Ruisseau d'Andriake — observation des tortues", body: "Suivez le ruisseau d'Andriake, zone protégée de nidification des tortues de mer, un moment fort de l'excursion." },
         { icon: "🚐", title: "Fin à Andriake & retour à Kaş", body: "Terminez à Demre (Myra) au port d'Andriake, puis 40 min de route vers Kaş. Arrivée vers 17h00–17h30." },
-      ],
-      ru: [
-        { icon: "🚶", title: "Место встречи: Царская гробница Каша — 07:30", body: "Встретьте гида. На полуострове Каш возможен трансфер; трансфер из Калкана за доплату 10 €." },
-        { icon: "🚐", title: "Поездка в Üçağız (40 мин)", body: "Живописная поездка с остановкой за припасами, прибытие в рыбацкую деревню Üçağız." },
-        { icon: "🛶", title: "Старт в Теймуссе (Üçağız)", body: "Получите снаряжение и инструктаж, затем спуск на воду с видом на некрополь Üçağız." },
-        { icon: "🏝", title: "Гребля над Затонувшим городом", body: "Пройдите прямо над Затонувшим городом Кекова, наблюдая под кристально чистой водой затопленные лестницы, стены и остатки гавани." },
-        { icon: "🐠", title: "Купание и снорклинг в скрытых бухтах", body: "Освежающие перерывы на купание в уединённых бухтах со снаряжением для снорклинга; высматривайте диких коз на скалах." },
-        { icon: "🥪", title: "Пикник-обед с видом", body: "Пикник на берегу со свежими сэндвичами, фруктами и местными закусками в спокойном средиземноморском пейзаже." },
-        { icon: "🦭", title: "Гребля у морской пещеры", body: "Пройдите мимо таинственной пещеры у острова Аширлы, бывшего пристанища тюленей-монахов — возможно, увидите черепах каретта." },
-        { icon: "🐢", title: "Ручей Андриаке — наблюдение за черепахами", body: "Следуйте вдоль ручья Андриаке, охраняемой зоны гнездования морских черепах — настоящая изюминка тура." },
-        { icon: "🚐", title: "Финиш в Андриаке и возвращение в Каш", body: "Завершите в Демре (Мира) в гавани Андриаке, затем 40-минутная дорога в Каш. Прибытие около 17:00–17:30." },
       ],
     },
   },

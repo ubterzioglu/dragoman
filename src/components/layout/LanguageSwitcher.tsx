@@ -2,7 +2,7 @@ import { useNavigate, useLocation, useParams } from "react-router-dom";
 import { LOCALES, isLocale, DEFAULT_LOCALE } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
-const LABELS: Record<string, string> = { tr: "TR", en: "EN", fr: "FR", ru: "RU" };
+const LABELS: Record<string, string> = { tr: "TR", en: "EN", fr: "FR" };
 
 /** Swaps the :lang segment of the current path, preserving the rest. */
 export function LanguageSwitcher({ className }: { className?: string }) {
@@ -13,8 +13,8 @@ export function LanguageSwitcher({ className }: { className?: string }) {
 
   const switchTo = (next: string) => {
     const parts = location.pathname.split("/");
-    // Replace whichever segment is the active locale, leaving any base-path
-    // prefix (e.g. /mvp) and the rest of the path intact.
+    // Replace whichever segment is the active locale, leaving the rest of the
+    // path intact.
     const langIndex = parts.findIndex((p) => isLocale(p));
     if (langIndex >= 0) parts[langIndex] = next;
     navigate(parts.join("/") || `/${next}`);

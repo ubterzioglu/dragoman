@@ -14,3 +14,9 @@ dist/
 
 # Supabase CLI local link state
 supabase/.temp/
+
+# Scraped content package working files (kept local, not committed)
+docs/.venv/
+docs/site_mirror/
+docs/clean_content/
+docs/site_mirror_crawl.log

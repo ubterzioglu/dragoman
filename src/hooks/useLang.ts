@@ -21,7 +21,7 @@ export function useLang() {
   /** Pick the right string/array from a Localized<T> content object. */
   const pick = <T,>(value: Record<Locale, T>): T => value[locale];
 
-  /** Build a path under the current locale, e.g. localePath("turlar") -> /mvp/tr/turlar */
+  /** Build a path under the current locale, e.g. localePath("turlar") -> /tr/turlar */
   const localePath = (path = "") => `${BASE_PATH}/${locale}${path ? `/${path}` : ""}`;
 
   return { locale, t, pick, localePath };

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Site is staged under /mvp until launch; only the Coming Soon root is listed.
-     Restore the full localized URL set when going live. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://dragomanturkey.online/</loc></url>
+<!-- Localized home pages. The full per-section URL set is added in Phase 5 once
+     all service sections (diving, sea kayak, outdoor, etc.) are wired up. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://dragomanturkey.online/tr</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dragomanturkey.online/tr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dragomanturkey.online/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dragomanturkey.online/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dragomanturkey.online/tr"/>
+  </url>
+  <url><loc>https://dragomanturkey.online/en</loc></url>
+  <url><loc>https://dragomanturkey.online/fr</loc></url>
 </urlset>
