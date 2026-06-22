@@ -109,7 +109,7 @@ function summarize(rows: TaskRow[]) {
   );
 }
 
-export default function StatusReportPanel() {
+export default function StatusReportPanel({ infoSlot }: AdminPanelProps) {
   const counts = summarize(ROWS);
   const total = ROWS.length;
 
@@ -124,6 +124,8 @@ export default function StatusReportPanel() {
           görmeniz için hazırlanmış bir izleme yüzeyi.
         </div>
       </AdminSurface>
+
+      {infoSlot}
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
         {(["done", "partial", "missing"] as Status[]).map((s) => (

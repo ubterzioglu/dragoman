@@ -6,7 +6,7 @@
  */
 
 import type { ReactNode } from "react";
-import { AdminSurface } from "./admin-ui";
+import { type AdminPanelProps, AdminSurface } from "./admin-ui";
 
 interface GuideSection {
   /** Üst şeritteki sekme adıyla aynı etiket */
@@ -148,7 +148,7 @@ function Card({ children }: { children: ReactNode }) {
   );
 }
 
-export default function GuidePanel() {
+export default function GuidePanel({ infoSlot }: AdminPanelProps) {
   return (
     <div className="space-y-8">
       <AdminSurface
@@ -161,6 +161,8 @@ export default function GuidePanel() {
           mevcut işlevleri korur; sadece yeni çalışma alanında daha net bir akışla sunulur.
         </div>
       </AdminSurface>
+
+      {infoSlot}
 
       {/* Genel: üst bar / kartlar */}
       <Card>
