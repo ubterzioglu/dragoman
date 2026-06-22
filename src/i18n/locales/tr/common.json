@@ -9,7 +9,14 @@
     "reviews": "Yorumlar",
     "contact": "İletişim",
     "faq": "S.S.S.",
-    "book": "Rezervasyon"
+    "book": "Rezervasyon",
+    "diving": "Dalış",
+    "seaKayak": "Deniz Kayağı",
+    "outdoor": "Doğa Etkinlikleri",
+    "transport": "Ulaşım & Konaklama",
+    "lifeguard": "Cankurtarma",
+    "shop": "Dükkan",
+    "blog": "Blog"
   },
   "hero": {
     "title": "Kekova'da denizle buluş",
@@ -165,5 +172,32 @@
     "title": "Sayfa Bulunamadı",
     "subtitle": "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
     "cta": "Ana sayfaya dön"
+  },
+  "diving": {
+    "title": "Dalış",
+    "subtitle": "Kaş'ta SSI yetkili dalış merkezi — kurslar, paketler ve özel dalışlar.",
+    "priceNote": "Fiyatlar Euro cinsindendir ve değişebilir. Güncel bilgi için bizimle iletişime geçin."
+  },
+  "outdoor": {
+    "title": "Doğa Etkinlikleri",
+    "subtitle": "Yürüyüş, bisiklet, coasteering ve çoklu aktivite turları."
+  },
+  "transport": {
+    "title": "Ulaşım & Konaklama",
+    "subtitle": "Otel konaklaması ve havalimanı transfer hizmetleri."
+  },
+  "lifeguard": {
+    "title": "Cankurtarma Merkezi",
+    "subtitle": "Bronz, Gümüş ve Altın cankurtaran kursları."
+  },
+  "shop": {
+    "title": "Dükkan",
+    "subtitle": "Dragoman ekibinin kitapları ve dalış rehberleri.",
+    "note": "Satın alma için lütfen bizimle iletişime geçin."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Dragoman'dan haberler, tur hikâyeleri ve rehberler.",
+    "empty": "Henüz yazı yok."
   }
 }

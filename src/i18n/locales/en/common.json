@@ -9,7 +9,14 @@
     "reviews": "Reviews",
     "contact": "Contact",
     "faq": "FAQ",
-    "book": "Book now"
+    "book": "Book now",
+    "diving": "Diving",
+    "seaKayak": "Sea Kayak",
+    "outdoor": "Outdoor Activities",
+    "transport": "Transport & Stay",
+    "lifeguard": "Lifeguard",
+    "shop": "Shop",
+    "blog": "Blog"
   },
   "hero": {
     "title": "Meet the sea in Kekova",
@@ -165,5 +172,32 @@
     "title": "Page Not Found",
     "subtitle": "The page you are looking for does not exist or has been moved.",
     "cta": "Back to home"
+  },
+  "diving": {
+    "title": "Diving",
+    "subtitle": "SSI-authorized dive center in Kaş — courses, packages and private dives.",
+    "priceNote": "Prices are in Euro and may change. Contact us for the latest details."
+  },
+  "outdoor": {
+    "title": "Outdoor Activities",
+    "subtitle": "Hiking, biking, coasteering and multi-sport tours."
+  },
+  "transport": {
+    "title": "Transport & Accommodation",
+    "subtitle": "Hotel accommodation and airport transfer services."
+  },
+  "lifeguard": {
+    "title": "Lifeguard Center",
+    "subtitle": "Bronze, Silver and Gold lifeguard courses."
+  },
+  "shop": {
+    "title": "Shop",
+    "subtitle": "Books and dive guides by the Dragoman team.",
+    "note": "Please contact us to purchase."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "News, tour stories and guides from Dragoman.",
+    "empty": "No posts yet."
   }
 }

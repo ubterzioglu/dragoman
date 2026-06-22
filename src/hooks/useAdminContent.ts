@@ -89,6 +89,37 @@ export async function fetchBlogPosts(): Promise<BlogPostRow[]> {
   return (data ?? []) as BlogPostRow[];
 }
 
+/** Public blog: published posts only, newest first. */
+export async function fetchPublishedBlogPosts(): Promise<BlogPostRow[]> {
+  if (!supabase) return [];
+  const { data, error } = await supabase
+    .from("blog_posts")
+    .select("*")
+    .eq("published", true)
+    .order("created_at", { ascending: false });
+  if (error) {
+    console.error("fetchPublishedBlogPosts:", error.message);
+    return [];
+  }
+  return (data ?? []) as BlogPostRow[];
+}
+
+/** Public blog: a single published post by slug, or null. */
+export async function fetchPublishedBlogPostBySlug(slug: string): Promise<BlogPostRow | null> {
+  if (!supabase) return null;
+  const { data, error } = await supabase
+    .from("blog_posts")
+    .select("*")
+    .eq("published", true)
+    .eq("slug", slug)
+    .maybeSingle();
+  if (error) {
+    console.error("fetchPublishedBlogPostBySlug:", error.message);
+    return null;
+  }
+  return (data ?? null) as BlogPostRow | null;
+}
+
 export async function saveBlogPost(input: BlogPostInput, id?: string): Promise<void> {
   if (!supabase) throw new Error("Supabase yapılandırılmamış");
   const payload = { ...input, updated_at: new Date().toISOString() };

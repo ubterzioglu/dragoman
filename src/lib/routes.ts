@@ -3,7 +3,13 @@
  * Full URLs are `/:lang/<segment>`. Centralized so nav, router and sitemap agree.
  */
 export const SEG = {
+  diving: "dalis",
   tours: "turlar",
+  outdoor: "doga-etkinlikleri",
+  transport: "ulasim-konaklama",
+  lifeguard: "cankurtarma",
+  shop: "dukkan",
+  blog: "blog",
   customTours: "ozel-turlar",
   trak: "trak-experience",
   about: "hakkimizda",

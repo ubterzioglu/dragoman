@@ -9,7 +9,14 @@
     "reviews": "Avis",
     "contact": "Contact",
     "faq": "FAQ",
-    "book": "Réserver"
+    "book": "Réserver",
+    "diving": "Plongée",
+    "seaKayak": "Kayak de mer",
+    "outdoor": "Activités nature",
+    "transport": "Transport & Séjour",
+    "lifeguard": "Sauvetage",
+    "shop": "Boutique",
+    "blog": "Blog"
   },
   "hero": {
     "title": "Rencontrez la mer à Kekova",
@@ -165,5 +172,32 @@
     "title": "Page introuvable",
     "subtitle": "La page que vous recherchez n'existe pas ou a été déplacée.",
     "cta": "Retour à l'accueil"
+  },
+  "diving": {
+    "title": "Plongée",
+    "subtitle": "Centre de plongée agréé SSI à Kaş — stages, forfaits et plongées privées.",
+    "priceNote": "Les prix sont en euros et peuvent changer. Contactez-nous pour les détails à jour."
+  },
+  "outdoor": {
+    "title": "Activités pleine nature",
+    "subtitle": "Randonnée, vélo, coasteering et circuits multisports."
+  },
+  "transport": {
+    "title": "Transport & Hébergement",
+    "subtitle": "Hébergement hôtelier et transferts aéroport."
+  },
+  "lifeguard": {
+    "title": "Centre de sauvetage",
+    "subtitle": "Cours de sauveteur bronze, argent et or."
+  },
+  "shop": {
+    "title": "Boutique",
+    "subtitle": "Livres et guides de plongée par l'équipe Dragoman.",
+    "note": "Veuillez nous contacter pour acheter."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Actualités, récits de tours et guides de Dragoman.",
+    "empty": "Aucun article pour l'instant."
   }
 }

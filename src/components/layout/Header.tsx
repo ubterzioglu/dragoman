@@ -12,12 +12,14 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { to: localePath(SEG.tours), label: t("nav.tours") },
-    { to: localePath(SEG.customTours), label: t("nav.customTours") },
-    { to: localePath(SEG.trak), label: t("nav.trak") },
+    { to: localePath(SEG.diving), label: t("nav.diving") },
+    { to: localePath(SEG.tours), label: t("nav.seaKayak") },
+    { to: localePath(SEG.outdoor), label: t("nav.outdoor") },
+    { to: localePath(SEG.transport), label: t("nav.transport") },
+    { to: localePath(SEG.lifeguard), label: t("nav.lifeguard") },
+    { to: localePath(SEG.shop), label: t("nav.shop") },
+    { to: localePath(SEG.blog), label: t("nav.blog") },
     { to: localePath(SEG.about), label: t("nav.about") },
-    { to: localePath(SEG.gallery), label: t("nav.gallery") },
-    { to: localePath(SEG.reviews), label: t("nav.reviews") },
     { to: localePath(SEG.contact), label: t("nav.contact") },
   ];
 

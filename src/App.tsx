@@ -6,8 +6,15 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 import Home from "@/pages/Home";
 
 // Home is eager (first paint); the rest are split into their own chunks.
+const Diving = lazy(() => import("@/pages/Diving"));
 const Tours = lazy(() => import("@/pages/Tours"));
 const TourDetail = lazy(() => import("@/pages/TourDetail"));
+const Outdoor = lazy(() => import("@/pages/Outdoor"));
+const Transport = lazy(() => import("@/pages/Transport"));
+const Lifeguard = lazy(() => import("@/pages/Lifeguard"));
+const Shop = lazy(() => import("@/pages/Shop"));
+const Blog = lazy(() => import("@/pages/Blog"));
+const BlogPost = lazy(() => import("@/pages/BlogPost"));
 const CustomTours = lazy(() => import("@/pages/CustomTours"));
 const TrakExperience = lazy(() => import("@/pages/TrakExperience"));
 const About = lazy(() => import("@/pages/About"));
@@ -34,8 +41,15 @@ export default function App() {
 
         <Route path="/:lang" element={<SiteLayout />}>
           <Route index element={<Home />} />
+          <Route path={SEG.diving} element={<Diving />} />
           <Route path={SEG.tours} element={<Tours />} />
           <Route path={`${SEG.tours}/:slug`} element={<TourDetail />} />
+          <Route path={SEG.outdoor} element={<Outdoor />} />
+          <Route path={SEG.transport} element={<Transport />} />
+          <Route path={SEG.lifeguard} element={<Lifeguard />} />
+          <Route path={SEG.shop} element={<Shop />} />
+          <Route path={SEG.blog} element={<Blog />} />
+          <Route path={`${SEG.blog}/:slug`} element={<BlogPost />} />
           <Route path={SEG.customTours} element={<CustomTours />} />
           <Route path={SEG.trak} element={<TrakExperience />} />
           <Route path={SEG.about} element={<About />} />
