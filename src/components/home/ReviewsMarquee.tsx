@@ -82,7 +82,10 @@ export function ReviewsMarquee() {
           <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-sand/70 to-transparent" />
           <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-sand/70 to-transparent" />
 
-          <div className="flex w-max animate-marquee group-hover:[animation-play-state:paused] motion-reduce:animate-none">
+          <div
+            className="flex w-max animate-marquee group-hover:[animation-play-state:paused] motion-reduce:animate-none"
+            style={{ animationDuration: `${Math.max(reviews.length * 8, 40)}s` }}
+          >
             {loop.map((r, i) => (
               <ReviewCard key={`${r.id}-${i}`} r={r} />
             ))}

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { Seo } from "@/components/seo/Seo";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { useLang } from "@/hooks/useLang";
@@ -22,14 +22,11 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-const RATING_FILTERS = [0, 5, 4] as const;
-
 export default function Reviews() {
   const { t, locale } = useLang();
 
   const [reviews, setReviews] = useState<ReviewRow[]>([]);
   const [loading, setLoading] = useState(true);
-  const [minRating, setMinRating] = useState<number>(0);
 
   useEffect(() => {
     let alive = true;
@@ -46,11 +43,6 @@ export default function Reviews() {
     };
   }, [locale]);
 
-  const filtered = useMemo(
-    () => reviews.filter((r) => (minRating ? r.rating >= minRating : true)),
-    [reviews, minRating],
-  );
-
   return (
     <>
       <Seo title={t("reviews.title")} description={t("reviews.subtitle")} />
@@ -62,28 +54,10 @@ export default function Reviews() {
           subtitle={t("reviews.subtitle")}
         />
 
-        {/* Rating filter */}
-        <div className="mb-8 flex flex-wrap items-center gap-3">
-          <span className="text-sm font-semibold text-teal/60">{t("reviews.filterByRating")}:</span>
-          {RATING_FILTERS.map((r) => (
-            <button
-              key={r}
-              onClick={() => setMinRating(r)}
-              className={`rounded-full px-4 py-1.5 text-sm font-semibold transition-colors ${
-                minRating === r
-                  ? "bg-teal text-white"
-                  : "border border-teal/20 text-teal hover:bg-foam"
-              }`}
-            >
-              {r === 0 ? t("reviews.filterAll") : `${r}★+`}
-            </button>
-          ))}
-        </div>
-
         {/* Review cards */}
         {!loading && (
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((review) => (
+            {reviews.map((review) => (
               <div
                 key={review.id}
                 className="flex flex-col rounded-2xl border border-teal/10 bg-white p-6 shadow-[0_10px_30px_rgba(1,68,57,0.08)]"
@@ -122,7 +96,7 @@ export default function Reviews() {
 
         {loading && <p className="py-12 text-center text-teal/50">{t("common.loading")}</p>}
 
-        {!loading && filtered.length === 0 && (
+        {!loading && reviews.length === 0 && (
           <p className="py-12 text-center text-teal/50">{t("reviews.empty")}</p>
         )}
       </Section>
