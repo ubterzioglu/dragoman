@@ -3,7 +3,7 @@
  * client can follow everything that has been built. Update the ENTRIES array
  * as new work ships.
  */
-import { AdminSurface } from "./admin-ui";
+import { type AdminPanelProps, AdminSurface } from "./admin-ui";
 
 interface UpdateGroup {
   date: string;
@@ -86,7 +86,7 @@ const PENDING: string[] = [
   "Gerçek WhatsApp mobil numarası ve Google Haritalar işletme linki.",
 ];
 
-export default function UpdatesPanel() {
+export default function UpdatesPanel({ infoSlot }: AdminPanelProps) {
   return (
     <div className="space-y-8">
       <AdminSurface
@@ -98,6 +98,8 @@ export default function UpdatesPanel() {
           tek bakışta cevap vermesi için sade tutulur.
         </div>
       </AdminSurface>
+
+      {infoSlot}
 
       {ENTRIES.map((g) => (
         <div
