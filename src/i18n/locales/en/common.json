@@ -127,7 +127,8 @@
     "sortNewest": "Newest first",
     "ratingLabel": "Rating",
     "featuredBadge": "Featured",
-    "filterByLang": "Filter by language"
+    "filterByRating": "Filter by rating",
+    "empty": "No reviews yet."
   },
   "reviewsMarquee": {
     "eyebrow": "TESTIMONIALS",

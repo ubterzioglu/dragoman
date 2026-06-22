@@ -127,7 +127,8 @@
     "sortNewest": "En Yeni",
     "ratingLabel": "Puan",
     "featuredBadge": "Öne Çıkan",
-    "filterByLang": "Dile göre filtrele"
+    "filterByRating": "Puana göre filtrele",
+    "empty": "Henüz yorum yok."
   },
   "reviewsMarquee": {
     "eyebrow": "GÖRÜŞLER",

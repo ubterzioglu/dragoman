@@ -127,7 +127,8 @@
     "sortNewest": "Plus récents",
     "ratingLabel": "Note",
     "featuredBadge": "En vedette",
-    "filterByLang": "Filtrer par langue"
+    "filterByRating": "Filtrer par note",
+    "empty": "Aucun avis pour le moment."
   },
   "reviewsMarquee": {
     "eyebrow": "TÉMOIGNAGES",

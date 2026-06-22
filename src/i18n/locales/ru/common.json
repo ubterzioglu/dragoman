@@ -127,7 +127,8 @@
     "sortNewest": "Сначала новые",
     "ratingLabel": "Оценка",
     "featuredBadge": "Избранное",
-    "filterByLang": "Фильтр по языку"
+    "filterByRating": "Фильтр по оценке",
+    "empty": "Пока нет отзывов."
   },
   "reviewsMarquee": {
     "eyebrow": "ОТЗЫВЫ",

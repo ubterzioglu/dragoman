@@ -3,11 +3,24 @@
  * Supports two input formats and never throws — returns { rows, errors }.
  */
 
+export type ParsedReviewLang = "tr" | "en" | "fr" | "ru";
+
 export interface ParsedReview {
   author: string;
   rating: number;
   body: string;
   source_label: string;
+  /** Original language of the review body; defaults to "en" when absent. */
+  source_lang?: ParsedReviewLang;
+  /** Dedupe key from the Maps scrape so re-imports never double-insert. */
+  external_id?: string | null;
+}
+
+const VALID_LANGS: readonly ParsedReviewLang[] = ["tr", "en", "fr", "ru"];
+
+function normalizeLang(value: unknown): ParsedReviewLang | undefined {
+  const v = String(value ?? "").trim().toLowerCase();
+  return (VALID_LANGS as readonly string[]).includes(v) ? (v as ParsedReviewLang) : undefined;
 }
 
 function clampRating(n: number): number {
@@ -55,6 +68,11 @@ export function parseBulkReviews(raw: string): { rows: ParsedReview[]; errors: s
           body,
           rating,
           source_label: String(item.source_label ?? "Google").trim() || "Google",
+          source_lang: normalizeLang(item.source_lang),
+          external_id:
+            item.external_id != null && String(item.external_id).trim()
+              ? String(item.external_id).trim()
+              : null,
         });
       });
       return { rows, errors };

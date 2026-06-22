@@ -107,6 +107,8 @@ export async function deleteBlogPost(id: string): Promise<void> {
 // ─── Reviews ──────────────────────────────────────────────────────────────────
 
 export type ReviewStatus = "published" | "archived";
+export type ReviewLang = "tr" | "en" | "fr" | "ru";
+export const REVIEW_LANGS: readonly ReviewLang[] = ["tr", "en", "fr", "ru"] as const;
 
 export interface ReviewRow {
   id: string;
@@ -116,6 +118,10 @@ export interface ReviewRow {
   source_label: string | null;
   status: ReviewStatus;
   sort_order: number;
+  source_lang: ReviewLang;
+  external_id: string | null;
+  review_date: string | null;
+  author_country: string | null;
   created_at: string;
 }
 
@@ -126,6 +132,15 @@ export interface ReviewInput {
   source_label: string | null;
   status: ReviewStatus;
   sort_order: number;
+  source_lang?: ReviewLang;
+}
+
+export interface ReviewTranslationRow {
+  id: string;
+  review_id: string;
+  lang: ReviewLang;
+  body: string;
+  is_machine: boolean;
 }
 
 export async function fetchReviews(): Promise<ReviewRow[]> {
@@ -153,7 +168,12 @@ export async function deleteReview(id: string): Promise<void> {
   if (error) throw new Error(error.message);
 }
 
-/** Bulk-inserts parsed reviews (admin "Toplu Ekle"). Published by default; sort_order filled by index. */
+/**
+ * Bulk-inserts parsed reviews (admin "Toplu Ekle"). Published by default;
+ * sort_order filled by index. Rows carrying an external_id are upserted on that
+ * key so re-importing the same Maps scrape never creates duplicates. The DB
+ * insert trigger kicks off auto-translation for each new row.
+ */
 export async function insertReviews(rows: ParsedReview[]): Promise<void> {
   if (!supabase) throw new Error("Supabase yapılandırılmamış");
   if (!rows.length) return;
@@ -164,9 +184,112 @@ export async function insertReviews(rows: ParsedReview[]): Promise<void> {
     source_label: r.source_label || "Google",
     status: "published" as ReviewStatus,
     sort_order: i,
+    source_lang: (r.source_lang ?? "en") as ReviewLang,
+    external_id: r.external_id ?? null,
   }));
-  const { error } = await supabase.from("reviews").insert(payload);
+
+  const withId = payload.filter((p) => p.external_id);
+  const withoutId = payload.filter((p) => !p.external_id);
+
+  if (withId.length) {
+    const { error } = await supabase
+      .from("reviews")
+      .upsert(withId, { onConflict: "external_id", ignoreDuplicates: true });
+    if (error) throw new Error(error.message);
+  }
+  if (withoutId.length) {
+    const { error } = await supabase.from("reviews").insert(withoutId);
+    if (error) throw new Error(error.message);
+  }
+}
+
+// ─── Review translations ───────────────────────────────────────────────────────
+
+/** Fetches translations for the given review IDs (admin per-language editing). */
+export async function fetchReviewTranslations(
+  reviewIds: string[],
+): Promise<ReviewTranslationRow[]> {
+  if (!supabase || !reviewIds.length) return [];
+  const { data, error } = await supabase
+    .from("review_translations")
+    .select("id, review_id, lang, body, is_machine")
+    .in("review_id", reviewIds);
   if (error) throw new Error(error.message);
+  return (data ?? []) as ReviewTranslationRow[];
+}
+
+/** Saves an admin-edited translation (marks it is_machine=false so it is never overwritten). */
+export async function saveReviewTranslation(
+  reviewId: string,
+  lang: ReviewLang,
+  body: string,
+): Promise<void> {
+  if (!supabase) throw new Error("Supabase yapılandırılmamış");
+  const { error } = await supabase.from("review_translations").upsert(
+    {
+      review_id: reviewId,
+      lang,
+      body,
+      is_machine: false,
+      updated_at: new Date().toISOString(),
+    },
+    { onConflict: "review_id,lang" },
+  );
+  if (error) throw new Error(error.message);
+}
+
+export interface TranslateResult {
+  ok: boolean;
+  reviews: number;
+  written: number;
+  skipped: number;
+  failed: number;
+}
+
+/**
+ * Invokes the translate-review Edge Function. Pass review IDs to translate a
+ * subset, or omit to translate every review (fills missing languages only).
+ */
+export async function triggerTranslateReviews(reviewIds?: string[]): Promise<TranslateResult> {
+  if (!supabase) throw new Error("Supabase yapılandırılmamış");
+  let ids = reviewIds;
+  if (!ids) {
+    const { data, error } = await supabase.from("reviews").select("id");
+    if (error) throw new Error(error.message);
+    ids = (data ?? []).map((r: { id: string }) => r.id);
+  }
+  if (!ids.length) return { ok: true, reviews: 0, written: 0, skipped: 0, failed: 0 };
+
+  const { data, error } = await supabase.functions.invoke("translate-review", {
+    body: { review_ids: ids },
+  });
+  if (error) throw new Error(error.message);
+  return data as TranslateResult;
+}
+
+/**
+ * Public-facing: published reviews with the body localized to `locale`.
+ * Falls back to the original body when a translation is missing.
+ */
+export async function fetchPublishedReviewsLocalized(
+  locale: ReviewLang,
+): Promise<ReviewRow[]> {
+  if (!supabase) return [];
+  const { data, error } = await supabase
+    .from("reviews")
+    .select("*, review_translations(lang, body)")
+    .eq("status", "published")
+    .order("sort_order", { ascending: true })
+    .order("created_at", { ascending: false });
+  if (error) {
+    console.error("fetchPublishedReviewsLocalized:", error.message);
+    return [];
+  }
+  type Joined = ReviewRow & { review_translations?: { lang: ReviewLang; body: string }[] };
+  return ((data ?? []) as Joined[]).map(({ review_translations, ...rest }) => {
+    const match = review_translations?.find((t) => t.lang === locale);
+    return { ...rest, body: match?.body ?? rest.body };
+  });
 }
 
 /** Public-facing: only published reviews, ordered for the homepage marquee. */
