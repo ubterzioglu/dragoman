@@ -3,6 +3,7 @@
     "home": "Accueil",
     "tours": "Excursions",
     "customTours": "Excursions privées",
+    "trak": "TRAK Experience",
     "about": "À propos",
     "gallery": "Galerie",
     "reviews": "Avis",
@@ -133,6 +134,31 @@
     "title": "Ce que disent nos clients",
     "subtitle": "Avis authentiques de clients qui nous ont évalués sur Google.",
     "cta": "Évaluez-nous sur Google"
+  },
+  "currency": {
+    "eyebrow": "CONVERTISSEUR",
+    "title": "Voyez le prix de l'excursion dans votre devise",
+    "amount": "Montant",
+    "from": "De",
+    "to": "Vers",
+    "swap": "Inverser",
+    "note": "Les taux sont approximatifs et à titre indicatif. Les paiements sont en EUR."
+  },
+  "trak": {
+    "eyebrow": "TRAK EXPERIENCE",
+    "title": "TRAK Experience (Placeholder)",
+    "subtitle": "Une expérience unique avec les kayaks de mer pliables TRAK. Contenu bientôt disponible.",
+    "introTitle": "Qu'est-ce que TRAK ?",
+    "introBody": "Cette page utilise un contenu provisoire. La description réelle, les caractéristiques et les images de l'expérience TRAK seront ajoutées ultérieurement.",
+    "featuresTitle": "Points forts",
+    "feature1Title": "Conception portable",
+    "feature1Body": "Texte provisoire — les avantages de portabilité du kayak pliable seront décrits ici.",
+    "feature2Title": "Construction durable",
+    "feature2Body": "Texte provisoire — la qualité des matériaux et la durabilité seront détaillées ici.",
+    "feature3Title": "Toutes les eaux",
+    "feature3Body": "Texte provisoire — les performances dans différentes conditions seront expliquées ici.",
+    "cta": "Obtenir des infos",
+    "placeholderNote": "Cette page est un contenu provisoire et sera mise à jour avec le contenu réel."
   },
   "notFound": {
     "title": "Page introuvable",

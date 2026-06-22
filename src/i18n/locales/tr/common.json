@@ -3,6 +3,7 @@
     "home": "Ana Sayfa",
     "tours": "Turlar",
     "customTours": "Özel Turlar",
+    "trak": "TRAK Experience",
     "about": "Hakkımızda",
     "gallery": "Galeri",
     "reviews": "Yorumlar",
@@ -133,6 +134,31 @@
     "title": "Misafirlerimiz ne diyor?",
     "subtitle": "Google üzerinde bizi değerlendiren gerçek katılımcıların yorumları.",
     "cta": "Bizi Google'da değerlendirin"
+  },
+  "currency": {
+    "eyebrow": "KUR ÇEVİRİCİ",
+    "title": "Tur fiyatını kendi paranızda görün",
+    "amount": "Tutar",
+    "from": "Kaynak",
+    "to": "Hedef",
+    "swap": "Değiştir",
+    "note": "Kurlar yaklaşıktır ve bilgilendirme amaçlıdır. Ödemeler EUR üzerinden alınır."
+  },
+  "trak": {
+    "eyebrow": "TRAK EXPERIENCE",
+    "title": "TRAK Experience (Placeholder)",
+    "subtitle": "Katlanabilir TRAK deniz kayaklarıyla benzersiz bir deneyim. İçerik yakında güncellenecek.",
+    "introTitle": "TRAK Nedir?",
+    "introBody": "Bu sayfa geçici (placeholder) içerikle hazırlanmıştır. TRAK deneyimine dair gerçek açıklama, teknik özellikler ve görseller daha sonra eklenecektir.",
+    "featuresTitle": "Öne Çıkanlar",
+    "feature1Title": "Taşınabilir Tasarım",
+    "feature1Body": "Placeholder metin — katlanabilir kayağın taşınabilirlik avantajları burada anlatılacak.",
+    "feature2Title": "Dayanıklı Malzeme",
+    "feature2Body": "Placeholder metin — malzeme kalitesi ve dayanıklılık detayları burada yer alacak.",
+    "feature3Title": "Her Suya Uygun",
+    "feature3Body": "Placeholder metin — farklı su koşullarındaki performans burada açıklanacak.",
+    "cta": "Bilgi Al",
+    "placeholderNote": "Bu sayfa placeholder içeriktir ve gerçek içerikle güncellenecektir."
   },
   "notFound": {
     "title": "Sayfa Bulunamadı",

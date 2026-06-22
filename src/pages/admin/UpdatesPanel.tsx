@@ -12,6 +12,17 @@ interface UpdateGroup {
 
 const ENTRIES: UpdateGroup[] = [
   {
+    date: "20 Haziran 2026",
+    title: "TRAK Experience + kur çevirici + galeri yönetimi",
+    items: [
+      "TRAK Experience sayfası eklendi (placeholder içerik; menüde ve footer'da link). Gerçek metin/görsel gelince güncellenecek.",
+      "Turlar sayfasına kur çevirici eklendi (EUR / TRY / USD / GBP / RUB). Kurlar şimdilik yaklaşık placeholder; ileride canlı kura bağlanabilir.",
+      "Galeri admin yönetimi: görsel yükleme/yayınla/sil; site galerisi Supabase'den beslenir (boşsa örnek görseller).",
+      "Marka renkli yin-yang favicon ve şeffaf logo tüm sayfalarda.",
+      "Admin paneli e-posta allowlist ile korundu (sadece yetkili hesaplar girer).",
+    ],
+  },
+  {
     date: "19 Haziran 2026",
     title: "Çok dilli site + içerik yönetimi + analitik",
     items: [
@@ -51,8 +62,8 @@ const ENTRIES: UpdateGroup[] = [
 
 const PENDING: string[] = [
   "Gerçek yüksek çözünürlüklü fotoğraflar ve drone videosu (içerik Drive'dan gelince yüklenecek).",
-  "Kur çevirici (€ / ₺ / $) — fiyatların anlık çevrimi.",
-  "TRAK Experience sayfası.",
+  "TRAK Experience sayfasının gerçek metin ve görselleri (şu an placeholder).",
+  "Kur çeviriciyi canlı döviz kuruna bağlama (şu an yaklaşık placeholder kurlar).",
   "Yorumların gerçek Google içerikleriyle doldurulması (admin > Yorumlar > Toplu Ekle).",
   "Gerçek WhatsApp mobil numarası ve Google Haritalar işletme linki.",
 ];

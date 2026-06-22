@@ -218,6 +218,27 @@ export default function AdminPage() {
           </a>
         </div>
 
+        {/* WhatsApp group card */}
+        <div className="mb-6 flex items-center gap-4 rounded-2xl border border-[#25D366]/20 bg-[#25D366]/5 p-5">
+          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#25D366]/10">
+            <svg viewBox="0 0 24 24" className="h-5 w-5 fill-[#25D366]" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.04c-.24.68-1.42 1.31-1.95 1.36-.5.05-.99.27-3.39-.71-2.86-1.13-4.68-4.05-4.82-4.24-.14-.19-1.16-1.54-1.16-2.94s.74-2.09 1-2.37c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.57.81 1.97.88 2.11.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.28.14.44.12.6-.07.17-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.61.76 1.89.9.28.14.46.21.53.33.07.12.07.69-.17 1.36z" />
+            </svg>
+          </div>
+          <div className="flex-1">
+            <div className="font-semibold text-teal-deep">SeaKayak Web Sitesi — WhatsApp Grubu</div>
+            <div className="text-sm text-teal/60">Proje iletişim grubu</div>
+          </div>
+          <a
+            href="https://chat.whatsapp.com/JYC5ORJnbLnAFALiEEwX3G"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-[#25D366] px-4 py-2 text-sm font-semibold text-white hover:bg-[#1ebe57]"
+          >
+            Aç
+          </a>
+        </div>
+
         {/* Tabs */}
         <div className="mb-6 flex flex-wrap gap-1 border-b-2 border-teal/10">
           {TABS.map((t) => (

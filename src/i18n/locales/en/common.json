@@ -3,6 +3,7 @@
     "home": "Home",
     "tours": "Tours",
     "customTours": "Private Tours",
+    "trak": "TRAK Experience",
     "about": "About",
     "gallery": "Gallery",
     "reviews": "Reviews",
@@ -133,6 +134,31 @@
     "title": "What our guests say",
     "subtitle": "Real reviews from guests who rated us on Google.",
     "cta": "Rate us on Google"
+  },
+  "currency": {
+    "eyebrow": "CURRENCY CONVERTER",
+    "title": "See the tour price in your own currency",
+    "amount": "Amount",
+    "from": "From",
+    "to": "To",
+    "swap": "Swap",
+    "note": "Rates are approximate and for information only. Payments are taken in EUR."
+  },
+  "trak": {
+    "eyebrow": "TRAK EXPERIENCE",
+    "title": "TRAK Experience (Placeholder)",
+    "subtitle": "A unique experience with foldable TRAK sea kayaks. Content coming soon.",
+    "introTitle": "What is TRAK?",
+    "introBody": "This page uses placeholder content. The real description, specifications and imagery for the TRAK experience will be added later.",
+    "featuresTitle": "Highlights",
+    "feature1Title": "Portable Design",
+    "feature1Body": "Placeholder text — the portability advantages of the folding kayak will be described here.",
+    "feature2Title": "Durable Build",
+    "feature2Body": "Placeholder text — material quality and durability details will go here.",
+    "feature3Title": "Any Water",
+    "feature3Body": "Placeholder text — performance across different water conditions will be explained here.",
+    "cta": "Get info",
+    "placeholderNote": "This page is placeholder content and will be updated with real content."
   },
   "notFound": {
     "title": "Page Not Found",

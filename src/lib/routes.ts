@@ -5,6 +5,7 @@
 export const SEG = {
   tours: "turlar",
   customTours: "ozel-turlar",
+  trak: "trak-experience",
   about: "hakkimizda",
   gallery: "galeri",
   reviews: "yorumlar",

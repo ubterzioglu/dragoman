@@ -36,6 +36,8 @@ export function Footer() {
             <span className="text-white/25">|</span>
             <Link to={localePath(SEG.customTours)} className="hover:text-orange-soft">{t("nav.customTours")}</Link>
             <span className="text-white/25">|</span>
+            <Link to={localePath(SEG.trak)} className="hover:text-orange-soft">{t("nav.trak")}</Link>
+            <span className="text-white/25">|</span>
             <Link to={localePath(SEG.about)} className="hover:text-orange-soft">{t("nav.about")}</Link>
             <span className="text-white/25">|</span>
             <Link to={localePath(SEG.faq)} className="hover:text-orange-soft">{t("nav.faq")}</Link>

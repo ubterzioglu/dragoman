@@ -14,6 +14,7 @@ export function Header() {
   const links = [
     { to: localePath(SEG.tours), label: t("nav.tours") },
     { to: localePath(SEG.customTours), label: t("nav.customTours") },
+    { to: localePath(SEG.trak), label: t("nav.trak") },
     { to: localePath(SEG.about), label: t("nav.about") },
     { to: localePath(SEG.gallery), label: t("nav.gallery") },
     { to: localePath(SEG.reviews), label: t("nav.reviews") },
