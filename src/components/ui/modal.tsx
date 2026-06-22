@@ -38,7 +38,7 @@ export function Modal({ open, onClose, children, labelledBy, className }: ModalP
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4"
+          className="fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto p-4 sm:items-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -60,7 +60,7 @@ export function Modal({ open, onClose, children, labelledBy, className }: ModalP
             exit={{ opacity: 0, scale: 0.96, y: 12 }}
             transition={{ duration: 0.22, ease: "easeOut" }}
             className={cn(
-              "relative z-10 max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-3xl bg-white shadow-[0_30px_80px_rgba(1,68,57,0.30)]",
+              "relative z-10 my-auto w-full max-w-lg rounded-3xl bg-white shadow-[0_30px_80px_rgba(1,68,57,0.30)]",
               className,
             )}
           >

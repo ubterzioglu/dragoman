@@ -13,11 +13,11 @@ export function WhyChooseUs() {
         title={t("whyChoose.title")}
         subtitle={t("whyChoose.subtitle")}
       />
-      <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="flex flex-col gap-3">
         {benefits.map((benefit, index) => (
           <li
             key={index}
-            className="flex items-start gap-3 rounded-xl border border-teal/10 bg-white p-5 shadow-sm"
+            className="flex items-start gap-3 rounded-xl border border-teal/10 bg-white px-4 py-3 shadow-sm sm:px-5 sm:py-4"
           >
             <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
             <span className="text-sm leading-relaxed text-ink/80">{benefit}</span>
