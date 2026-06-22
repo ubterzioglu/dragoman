@@ -19,9 +19,9 @@
     "blog": "Blog"
   },
   "hero": {
-    "title": "Rencontrez la mer à Kekova",
-    "subtitle": "Pagayez au-dessus de la cité engloutie, nagez dans des criques cachées et découvrez la côte lycienne à couper le souffle en kayak de mer.",
-    "ctaTours": "Découvrir les excursions",
+    "title": "La mer et la nature à Kaş",
+    "subtitle": "Centre de plongée SSI, sorties en kayak de mer à Kekova et activités nature — le tout à Kaş, en petits groupes.",
+    "ctaTours": "Découvrir les services",
     "ctaBook": "Réserver"
   },
   "common": {
@@ -49,7 +49,7 @@
   },
   "whyChoose": {
     "title": "Pourquoi nous choisir ?",
-    "subtitle": "Petits groupes encadrés par des guides experts diplômés — une expérience sûre et inoubliable."
+    "subtitle": "Un centre de plongée SSI et des guides agréés en petits groupes — sûr et inoubliable."
   },
   "tours": {
     "title": "Excursions & Aventures",
@@ -88,14 +88,14 @@
   },
   "about": {
     "title": "À propos",
-    "subtitle": "Membre de Dragoman Turkey — pionniers du kayak de mer sur la côte de Kaş et de Kekova.",
+    "subtitle": "Membre de Dragoman Turkey — pionniers de la plongée, du kayak de mer et des activités nature sur la côte de Kaş et Kekova.",
     "eyebrow": "Qui sommes-nous ?",
     "storyTitle": "L'histoire de Dragoman Diving & Outdoors",
-    "storyBody": "Dragoman Diving & Outdoors a été fondé à Kaş, Antalya, au sein de Dragoman Turkey, l'une des agences de voyage les plus établies de Turquie. Au fil des années, nous avons guidé des centaines de visiteurs sur les eaux enchanteresses de Kekova — pagayant au-dessus de la Cité engloutie, explorant des criques cachées le long de la côte lycienne et mouillant dans d'anciens ports. Notre mission a toujours été la même : offrir une immersion profonde dans la nature et l'histoire, en petits groupes en toute sécurité.",
+    "storyBody": "Dragoman Diving & Outdoors a été fondé à Kaş, Antalya, au sein de Dragoman Turkey, l'une des plus anciennes agences de voyage de Turquie. Grâce à notre centre de plongée agréé TSSF (#32) et SSI Diamond Center (#729285), nous avons formé des centaines de plongeurs, guidé des sorties en kayak de mer sur les eaux enchanteresses de Kekova et organisé des activités nature — randonnée, vélo et coasteering — le long de la côte lycienne. Notre mission reste la même : offrir une immersion nature et histoire en petits groupes sécurisés.",
     "guidesTitle": "Nos guides experts",
-    "guidesBody": "Tous nos guides sont agréés par le ministère turc de la Culture et du Tourisme. Grâce à une formation complète en technique de kayak de mer, premiers secours et archéologie régionale, nos guides offrent une expérience sûre et enrichissante à chaque groupe. Les groupes comptent généralement 8 à 12 personnes, garantissant une attention personnalisée pour chaque participant.",
+    "guidesBody": "Tous nos guides sont agréés par le ministère turc de la Culture et du Tourisme. Formés à la plongée, à la technique du kayak de mer, aux premiers secours et à l'archéologie régionale, ils offrent une expérience sûre et enrichissante. Les groupes comptent généralement 8 à 12 personnes.",
     "safetyTitle": "Nos standards de sécurité",
-    "safetyBody": "Tout notre équipement est entretenu régulièrement et répond aux normes de sécurité européennes. Chaque kayak est équipé d'un gilet de sauvetage, d'un casque et d'un sac étanche. Les itinéraires sont mis à jour en temps réel selon les conditions météorologiques — la sécurité de nos clients passe avant tout."
+    "safetyBody": "Tout l'équipement est entretenu régulièrement et conforme aux normes de sécurité de l'UE. Chaque plongée et sortie en kayak est dotée d'un équipement de sécurité adapté. Les itinéraires sont mis à jour en temps réel selon la météo — la sécurité de nos hôtes prime toujours."
   },
   "custom": {
     "title": "Excursions privées & sur mesure",
@@ -122,7 +122,7 @@
   },
   "gallery": {
     "title": "Galerie",
-    "subtitle": "Des moments capturés sur les eaux magiques de Kekova.",
+    "subtitle": "Moments de plongée, de kayak de mer et de nature autour de Kaş.",
     "eyebrow": "Photos"
   },
   "reviews": {
@@ -199,5 +199,18 @@
     "title": "Blog",
     "subtitle": "Actualités, récits de tours et guides de Dragoman.",
     "empty": "Aucun article pour l'instant."
+  },
+  "homeServices": {
+    "eyebrow": "Ce que nous faisons",
+    "title": "Nos services",
+    "subtitle": "De la plongée au kayak de mer, des aventures nature à la formation de sauvetage.",
+    "diving": "Plongée",
+    "divingDesc": "Centre SSI, stages et forfaits.",
+    "seaKayak": "Kayak de mer",
+    "seaKayakDesc": "Sorties guidées à Kekova.",
+    "outdoor": "Activités nature",
+    "outdoorDesc": "Randonnée, vélo, coasteering.",
+    "lifeguard": "Sauvetage",
+    "lifeguardDesc": "Cours bronze, argent, or."
   }
 }

@@ -19,10 +19,10 @@
     "blog": "Blog"
   },
   "hero": {
-    "title": "Kekova'da denizle buluş",
-    "subtitle": "Batık şehir üzerinde kürek çek, saklı koylarda yüz, Likya kıyısının eşsiz güzelliğini deniz kayağıyla keşfet.",
-    "ctaTours": "Turları keşfet",
-    "ctaBook": "Hemen rezervasyon"
+    "title": "Kaş'ta deniz ve doğa",
+    "subtitle": "SSI yetkili dalış merkezi, Kekova deniz kayağı turları ve doğa etkinlikleri — hepsi Kaş'ta, küçük gruplarla.",
+    "ctaTours": "Hizmetleri keşfet",
+    "ctaBook": "Rezervasyon"
   },
   "common": {
     "from": "başlangıç",
@@ -49,7 +49,7 @@
   },
   "whyChoose": {
     "title": "Neden Bizi Seçmelisiniz?",
-    "subtitle": "Lisanslı rehberler eşliğinde küçük gruplarla, güvenli ve unutulmaz bir deneyim."
+    "subtitle": "SSI yetkili dalış merkezi ve lisanslı rehberlerle küçük gruplar — güvenli ve unutulmaz."
   },
   "tours": {
     "title": "Turlar & Maceralar",
@@ -88,14 +88,14 @@
   },
   "about": {
     "title": "Hakkımızda",
-    "subtitle": "Dragoman Turkey bünyesinde, Kaş ve Kekova kıyılarında deniz kayağının öncüsü.",
+    "subtitle": "Dragoman Turkey'nin parçası — Kaş ve Kekova kıyısında dalış, deniz kayağı ve doğa etkinliklerinin öncüsü.",
     "eyebrow": "Kim Biz?",
     "storyTitle": "Dragoman Diving & Outdoors'ın Hikayesi",
-    "storyBody": "Dragoman Diving & Outdoors, Türkiye'nin en köklü seyahat şirketi Dragoman Turkey'nin bir parçası olarak Kaş, Antalya'da kuruldu. Yıllar içinde Kekova'nın büyüleyici sularında yüzlerce misafire rehberlik ettik; Batık Şehir'in üzerinde kürek çektik, Likya kıyısının saklı koylarını keşfettik, antik limanlarda demir attık. Amacımız her zaman aynı oldu: güvenli, küçük gruplarla derin bir doğa ve tarih deneyimi sunmak.",
+    "storyBody": "Dragoman Diving & Outdoors, Türkiye'nin en köklü seyahat şirketlerinden Dragoman Turkey'nin parçası olarak Kaş, Antalya'da kuruldu. TSSF yetkili (#32) ve SSI Diamond Center (#729285) dalış merkezimizle yüzlerce misafire dalış eğitimi verdik, Kekova'nın büyüleyici sularında deniz kayağı turları düzenledik ve Likya kıyısında yürüyüş, bisiklet, coasteering gibi doğa etkinlikleri gerçekleştirdik. Amacımız hep aynı: güvenli, küçük gruplarla derin bir doğa ve tarih deneyimi sunmak.",
     "guidesTitle": "Uzman Rehberlerimiz",
-    "guidesBody": "Tüm rehberlerimiz Türkiye Kültür ve Turizm Bakanlığı tarafından lisanslandırılmıştır. Deniz kayağı tekniği, ilk yardım ve bölge arkeolojisi konularında kapsamlı eğitim almış rehberlerimiz, her gruba güvenli ve zengin bir deneyim sunar. Gruplarımız genellikle 8-12 kişiden oluşur; bu sayede her katılımcıya bireysel ilgi gösterilir.",
+    "guidesBody": "Tüm rehberlerimiz T.C. Kültür ve Turizm Bakanlığı lisanslıdır. Dalış, deniz kayağı tekniği, ilk yardım ve bölge arkeolojisi konusunda kapsamlı eğitim almış rehberlerimiz her grup için güvenli ve zengin bir deneyim sunar. Gruplarımız genellikle 8–12 kişiliktir.",
     "safetyTitle": "Güvenlik Standartlarımız",
-    "safetyBody": "Tüm ekipmanımız düzenli olarak bakımdan geçirilir ve AB güvenlik standartlarını karşılar. Her tüpte can yeleği, kask ve su geçirmez çanta bulunur. Rotalarımız hava koşullarına göre anlık olarak güncellenir; misafirlerimizin can güvenliği her şeyden önce gelir."
+    "safetyBody": "Tüm ekipmanlarımız düzenli servis edilir ve AB güvenlik standartlarını karşılar. Her dalış ve kayak için uygun güvenlik ekipmanı sağlanır. Rotalar hava koşullarına göre gerçek zamanlı güncellenir — misafirlerimizin güvenliği her zaman önce gelir."
   },
   "custom": {
     "title": "Özel & Kişiye Özel Turlar",
@@ -122,7 +122,7 @@
   },
   "gallery": {
     "title": "Galeri",
-    "subtitle": "Kekova'nın büyüleyici sularında çekilen anlar.",
+    "subtitle": "Kaş'ta dalış, deniz kayağı ve doğanın büyülü anları.",
     "eyebrow": "Fotoğraflar"
   },
   "reviews": {
@@ -199,5 +199,18 @@
     "title": "Blog",
     "subtitle": "Dragoman'dan haberler, tur hikâyeleri ve rehberler.",
     "empty": "Henüz yazı yok."
+  },
+  "homeServices": {
+    "eyebrow": "Ne yapıyoruz",
+    "title": "Hizmetlerimiz",
+    "subtitle": "Dalıştan deniz kayağına, doğa etkinliklerinden cankurtarma eğitimine.",
+    "diving": "Dalış",
+    "divingDesc": "SSI dalış merkezi, kurslar ve paketler.",
+    "seaKayak": "Deniz Kayağı",
+    "seaKayakDesc": "Kekova'da rehberli kayak turları.",
+    "outdoor": "Doğa Etkinlikleri",
+    "outdoorDesc": "Yürüyüş, bisiklet, coasteering.",
+    "lifeguard": "Cankurtarma",
+    "lifeguardDesc": "Bronz, Gümüş, Altın kurslar."
   }
 }

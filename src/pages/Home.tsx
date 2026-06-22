@@ -1,5 +1,6 @@
 import { Seo } from "@/components/seo/Seo";
 import { Hero } from "@/components/home/Hero";
+import { HomeServices } from "@/components/home/HomeServices";
 import { TourHighlights } from "@/components/home/TourHighlights";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { ReviewsMarquee } from "@/components/home/ReviewsMarquee";
@@ -13,6 +14,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "SportsActivityLocation",
     name: SITE.name,
+    sport: ["Scuba Diving", "Sea Kayaking", "Outdoor Activities"],
     url: SITE.domain,
     image: SITE.ogImage,
     telephone: SITE.phone,
@@ -33,6 +35,7 @@ export default function Home() {
         jsonLd={jsonLd}
       />
       <Hero />
+      <HomeServices />
       <TourHighlights />
       <WhyChooseUs />
       <ReviewsMarquee />

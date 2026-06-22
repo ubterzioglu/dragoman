@@ -19,9 +19,9 @@
     "blog": "Blog"
   },
   "hero": {
-    "title": "Meet the sea in Kekova",
-    "subtitle": "Paddle over the sunken city, swim in hidden bays, and discover the breathtaking Lycian coast by sea kayak.",
-    "ctaTours": "Explore tours",
+    "title": "Sea and nature in Kaş",
+    "subtitle": "SSI dive center, Kekova sea kayak tours and outdoor activities — all in Kaş, in small groups.",
+    "ctaTours": "Explore services",
     "ctaBook": "Book now"
   },
   "common": {
@@ -49,7 +49,7 @@
   },
   "whyChoose": {
     "title": "Why Choose Us?",
-    "subtitle": "Small groups led by licensed expert guides — a safe and unforgettable experience."
+    "subtitle": "An SSI dive center and licensed guides leading small groups — safe and unforgettable."
   },
   "tours": {
     "title": "Tours & Adventures",
@@ -88,14 +88,14 @@
   },
   "about": {
     "title": "About Us",
-    "subtitle": "Part of Dragoman Turkey — pioneers of sea kayaking on the Kaş and Kekova coast.",
+    "subtitle": "Part of Dragoman Turkey — pioneers of diving, sea kayaking and outdoor activities on the Kaş and Kekova coast.",
     "eyebrow": "Who We Are",
     "storyTitle": "The Dragoman Diving & Outdoors Story",
-    "storyBody": "Dragoman Diving & Outdoors was founded in Kaş, Antalya as part of Dragoman Turkey, one of Turkey's most established travel companies. Over the years we have guided hundreds of guests through the enchanting waters of Kekova — paddling over the Sunken City, exploring hidden coves along the Lycian coast, and anchoring in ancient harbors. Our mission has always been the same: to deliver deep, nature-and-history immersion in safe small groups.",
+    "storyBody": "Dragoman Diving & Outdoors was founded in Kaş, Antalya as part of Dragoman Turkey, one of Turkey's most established travel companies. Through our TSSF-authorized (#32) and SSI Diamond Center (#729285) dive center we have trained hundreds of divers, guided sea kayak tours across the enchanting waters of Kekova, and run outdoor activities — hiking, biking and coasteering — along the Lycian coast. Our mission has always been the same: to deliver deep, nature-and-history immersion in safe small groups.",
     "guidesTitle": "Our Expert Guides",
-    "guidesBody": "All of our guides are licensed by the Turkish Ministry of Culture and Tourism. With comprehensive training in sea kayaking technique, first aid, and regional archaeology, our guides deliver a safe and enriching experience for every group. Groups are typically 8–12 people, ensuring personal attention for every guest.",
+    "guidesBody": "All of our guides are licensed by the Turkish Ministry of Culture and Tourism. With comprehensive training in diving, sea kayaking technique, first aid, and regional archaeology, our guides deliver a safe and enriching experience for every group. Groups are typically 8–12 people.",
     "safetyTitle": "Our Safety Standards",
-    "safetyBody": "All equipment is serviced regularly and meets EU safety standards. Every kayak is supplied with a life jacket, helmet, and dry bag. Routes are updated in real time to match weather conditions — the safety of our guests always comes first."
+    "safetyBody": "All equipment is serviced regularly and meets EU safety standards. Every dive and kayak trip is supplied with proper safety gear. Routes are updated in real time to match weather conditions — the safety of our guests always comes first."
   },
   "custom": {
     "title": "Private & Custom Tours",
@@ -122,7 +122,7 @@
   },
   "gallery": {
     "title": "Gallery",
-    "subtitle": "Moments captured on the magical waters of Kekova.",
+    "subtitle": "Moments of diving, sea kayaking and nature around Kaş.",
     "eyebrow": "Photos"
   },
   "reviews": {
@@ -199,5 +199,18 @@
     "title": "Blog",
     "subtitle": "News, tour stories and guides from Dragoman.",
     "empty": "No posts yet."
+  },
+  "homeServices": {
+    "eyebrow": "What we do",
+    "title": "Our Services",
+    "subtitle": "From diving to sea kayaking, outdoor adventures to lifeguard training.",
+    "diving": "Diving",
+    "divingDesc": "SSI dive center, courses and packages.",
+    "seaKayak": "Sea Kayak",
+    "seaKayakDesc": "Guided kayak tours in Kekova.",
+    "outdoor": "Outdoor Activities",
+    "outdoorDesc": "Hiking, biking, coasteering.",
+    "lifeguard": "Lifeguard",
+    "lifeguardDesc": "Bronze, Silver, Gold courses."
   }
 }

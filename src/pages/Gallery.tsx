@@ -12,16 +12,13 @@ interface GalleryImage {
   caption: string;
 }
 
-// Shown when the admin gallery (Supabase) is empty, so the page is never blank.
+// Shown only when the admin gallery (Supabase) is empty, so the page is never
+// blank. Production normally renders the real gallery_images from Supabase.
 const FALLBACK_IMAGES: GalleryImage[] = [
-  { src: "/seakayakog.jpg", alt: "Kekova sea kayaking", caption: "Kekova Batık Şehir" },
-  { src: "/seakayakog.jpg", alt: "Lycian coast kayak", caption: "Likya kıyısı" },
-  { src: "/seakayakog.jpg", alt: "Simena castle view", caption: "Simena Kalesi" },
-  { src: "/seakayakog.jpg", alt: "Tersane Bay", caption: "Tersane Koyu" },
-  { src: "/seakayakog.jpg", alt: "Kekova island paddle", caption: "Kekova Adası" },
-  { src: "/seakayakog.jpg", alt: "Hidden cove swimming", caption: "Saklı Koy" },
-  { src: "/seakayakog.jpg", alt: "Sunrise over Kekova", caption: "Kekova'da Gün Doğumu" },
-  { src: "/seakayakog.jpg", alt: "Group kayaking tour", caption: "Grup Turu" },
+  { src: "/images/tours/kekova-classic.jpg", alt: "Kekova sea kayaking", caption: "Kekova deniz kayağı" },
+  { src: "/images/tours/kekova-west.jpg", alt: "Lycian coast kayak", caption: "Likya kıyısı" },
+  { src: "/images/tours/kekova-east.jpg", alt: "Sunken city paddle", caption: "Batık Şehir" },
+  { src: "/seakayakog.jpg", alt: "Diving and outdoors in Kaş", caption: "Kaş'ta dalış ve doğa" },
 ];
 
 interface LightboxProps {
