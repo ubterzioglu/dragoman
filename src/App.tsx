@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { DEFAULT_LOCALE } from "@/lib/site";
 import { SEG } from "@/lib/routes";
 import { SiteLayout } from "@/components/layout/SiteLayout";
+import { DemoBanner } from "@/components/layout/DemoBanner";
 import Home from "@/pages/Home";
 
 // Home is eager (first paint); the rest are split into their own chunks.
@@ -31,6 +32,7 @@ function PageFallback() {
 export default function App() {
   return (
     <Suspense fallback={<PageFallback />}>
+      <DemoBanner />
       <Routes>
         {/* Admin stays at the public root. */}
         <Route path="/admin" element={<AdminPage />} />
