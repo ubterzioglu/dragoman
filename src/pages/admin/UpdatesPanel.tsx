@@ -14,6 +14,22 @@ interface UpdateGroup {
 const ENTRIES: UpdateGroup[] = [
   {
     date: "22 Haziran 2026",
+    title: "Dalış & outdoor kimliğine geçiş (Dragoman Diving & Outdoors)",
+    items: [
+      "Site, deniz kanosu odağından çıkıp 'Dragoman Diving & Outdoors' dalış ve outdoor kimliğine taşındı — başlık, logo, favicon, sosyal kartlar ve metinler yeni markaya göre güncellendi.",
+      "Alan adı dragomanturkey.online olarak ayarlandı; site artık ana adreste (kök) canlı — eski /mvp deneme yolu kaldırıldı.",
+      "Yeni bölümler eklendi: Dalış (Diving), Outdoor, Transfer (Transport), Cankurtaran (Lifeguard), Mağaza (Shop) ve Blog.",
+      "Dalış içerikleri eklendi (kurs ve dalış türleri) ve hizmet/servis listeleri yapılandırıldı; bu içerikler ileride panelden yönetilebilecek şekilde hazırlandı.",
+      "Üst menü iki katmanlı (two-tier) yeni düzene geçti — referans siteye uygun, bölümler daha derli toplu.",
+      "Varsayılan site dili İngilizce yapıldı; dil seçenekleri Türkçe, İngilizce ve Fransızca olarak sadeleştirildi (Rusça kaldırıldı).",
+      "Ana sayfa, Hakkımızda ve Galeri dalış + outdoor kimliğine göre yeniden yazıldı; ana sayfaya hizmet kartları bölümü eklendi.",
+      "Gerçek dalış görselleri (kurslar, ekipman, tekne, sualtı kareleri) projeye aktarıldı — galeri ve sayfalarda kullanılmak üzere hazır.",
+      "Sitemap tüm yeni bölüm ve dil adresleriyle güncellendi (arama motorları için).",
+      "Güvenlik: örnek ortam dosyasındaki gerçek anahtarlar temizlendi; sosyal medya kullanıcı adları @dragomanturkey placeholder olarak ayarlandı.",
+    ],
+  },
+  {
+    date: "22 Haziran 2026",
     title: "Yönetim paneli kullanım kolaylığı iyileştirmeleri",
     items: [
       "Giriş ekranına 'Şifremi unuttum' eklendi — yetkili e-postaya sıfırlama bağlantısı gönderilir.",
@@ -79,8 +95,9 @@ const ENTRIES: UpdateGroup[] = [
 ];
 
 const PENDING: string[] = [
-  "Gerçek yüksek çözünürlüklü fotoğraflar ve drone videosu (içerik Drive'dan gelince yüklenecek).",
-  "TRAK Experience sayfasının gerçek metin ve görselleri (şu an placeholder).",
+  "Yeni bölümlerin (Dalış, Outdoor, Transfer, Cankurtaran, Mağaza, Blog) gerçek metin ve fiyat içerikleriyle doldurulması.",
+  "Aktarılan dalış görsellerinin galeri ve ilgili sayfalara nihai yerleşimi; eksik yüksek çözünürlüklü foto/video tamamlanması.",
+  "Sosyal medya kullanıcı adlarının gerçek hesaplarla değiştirilmesi (şu an @dragomanturkey placeholder).",
   "Kur çeviriciyi canlı döviz kuruna bağlama (şu an yaklaşık placeholder kurlar).",
   "Yorumların gerçek Google içerikleriyle doldurulması (admin > Yorumlar > Toplu Ekle).",
   "Gerçek WhatsApp mobil numarası ve Google Haritalar işletme linki.",
