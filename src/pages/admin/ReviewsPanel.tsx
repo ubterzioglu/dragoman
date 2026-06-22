@@ -160,6 +160,7 @@ export default function ReviewsPanel({ infoSlot }: AdminPanelProps) {
   const [translateMsg, setTranslateMsg] = useState("");
   const [retranslateId, setRetranslateId] = useState<string | null>(null);
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [search, setSearch] = useState("");
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -299,6 +300,16 @@ export default function ReviewsPanel({ infoSlot }: AdminPanelProps) {
   };
 
   const transFor = (reviewId: string) => translations.filter((t) => t.review_id === reviewId);
+
+  const query = search.trim().toLowerCase();
+  const filtered = query
+    ? items.filter((r) =>
+        [r.author, r.body, r.source_label ?? "", r.source_lang ?? ""]
+          .join(" ")
+          .toLowerCase()
+          .includes(query),
+      )
+    : items;
 
   return (
     <div className="space-y-6">
@@ -463,7 +474,9 @@ export default function ReviewsPanel({ infoSlot }: AdminPanelProps) {
         </div>
 
         <AdminSurface
-          title={`${items.length} yorum`}
+          title={
+            query ? `${filtered.length}/${items.length} yorum` : `${items.length} yorum`
+          }
           description="Yorumlar, çeviri kapsamı ve yayın durumu ile birlikte kartlar halinde listelenir."
           actions={
             <button
@@ -475,6 +488,43 @@ export default function ReviewsPanel({ infoSlot }: AdminPanelProps) {
             </button>
           }
         >
+          {items.length > 0 && (
+            <div className="relative mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+                className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-teal/40"
+              >
+                <circle cx={11} cy={11} r={8} />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+              <input
+                type="search"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Yorum ara — yazar, metin, kaynak veya dil…"
+                aria-label="Yorumlarda ara"
+                className="w-full rounded-2xl border border-teal/15 bg-[#fcfbf8] py-3 pl-11 pr-11 text-sm outline-none focus:border-orange focus:ring-4 focus:ring-orange/10"
+              />
+              {search && (
+                <button
+                  type="button"
+                  onClick={() => setSearch("")}
+                  aria-label="Aramayı temizle"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full px-2 py-0.5 text-sm font-semibold text-teal/50 hover:bg-foam hover:text-teal"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+          )}
+
           {!loading && items.length === 0 && (
             <AdminEmptyState
               title="Henüz yorum yok"
@@ -482,8 +532,15 @@ export default function ReviewsPanel({ infoSlot }: AdminPanelProps) {
             />
           )}
 
+          {!loading && items.length > 0 && filtered.length === 0 && (
+            <AdminEmptyState
+              title="Eşleşen yorum yok"
+              description={`"${search.trim()}" için sonuç bulunamadı. Farklı bir kelime deneyin veya aramayı temizleyin.`}
+            />
+          )}
+
           <div className="grid gap-4 xl:grid-cols-2">
-            {items.map((r) => {
+            {filtered.map((r) => {
               const trs = transFor(r.id);
               const isOpen = expanded === r.id;
               return (
