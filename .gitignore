@@ -20,3 +20,7 @@ docs/.venv/
 docs/site_mirror/
 docs/clean_content/
 docs/site_mirror_crawl.log
+
+# Python build artifacts
+__pycache__/
+*.pyc
