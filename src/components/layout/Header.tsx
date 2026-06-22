@@ -26,7 +26,6 @@ export function Header() {
     { to: localePath(SEG.tours), label: t("nav.seaKayak") },
     { to: localePath(SEG.outdoor), label: t("nav.outdoor") },
     { to: localePath(SEG.transport), label: t("nav.transport") },
-    { to: localePath(SEG.lifeguard), label: t("nav.lifeguard") },
     { to: localePath(SEG.shop), label: t("nav.shop") },
   ];
 

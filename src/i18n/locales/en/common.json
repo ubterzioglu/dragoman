@@ -14,7 +14,6 @@
     "seaKayak": "Sea Kayak",
     "outdoor": "Outdoor Activities",
     "transport": "Transport & Stay",
-    "lifeguard": "Lifeguard",
     "shop": "Shop",
     "blog": "Blog",
     "reservation": "Reservation and Contact"
@@ -118,7 +117,7 @@
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know before you paddle.",
+    "subtitle": "Everything you need to know about diving, sea kayaking and our outdoor activities.",
     "eyebrow": "FAQ"
   },
   "gallery": {
@@ -181,15 +180,13 @@
   },
   "outdoor": {
     "title": "Outdoor Activities",
-    "subtitle": "Hiking, biking, coasteering and multi-sport tours."
+    "subtitle": "Hiking, biking, coasteering and multi-sport tours.",
+    "priceNote": "Prices are in Euro and may change. Contact us for the latest details."
   },
   "transport": {
     "title": "Transport & Accommodation",
-    "subtitle": "Hotel accommodation and airport transfer services."
-  },
-  "lifeguard": {
-    "title": "Lifeguard Center",
-    "subtitle": "Bronze, Silver and Gold lifeguard courses."
+    "subtitle": "Hotel accommodation and airport transfer services.",
+    "priceNote": "Prices and availability on request. Contact us for the latest details."
   },
   "shop": {
     "title": "Shop",
@@ -204,14 +201,12 @@
   "homeServices": {
     "eyebrow": "What we do",
     "title": "Our Services",
-    "subtitle": "From diving to sea kayaking, outdoor adventures to lifeguard training.",
+    "subtitle": "From diving to sea kayaking and outdoor adventures.",
     "diving": "Diving",
     "divingDesc": "SSI dive center, courses and packages.",
     "seaKayak": "Sea Kayak",
     "seaKayakDesc": "Guided kayak tours in Kekova.",
     "outdoor": "Outdoor Activities",
-    "outdoorDesc": "Hiking, biking, coasteering.",
-    "lifeguard": "Lifeguard",
-    "lifeguardDesc": "Bronze, Silver, Gold courses."
+    "outdoorDesc": "Hiking, biking, coasteering."
   }
 }

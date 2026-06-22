@@ -11,7 +11,6 @@ const Tours = lazy(() => import("@/pages/Tours"));
 const TourDetail = lazy(() => import("@/pages/TourDetail"));
 const Outdoor = lazy(() => import("@/pages/Outdoor"));
 const Transport = lazy(() => import("@/pages/Transport"));
-const Lifeguard = lazy(() => import("@/pages/Lifeguard"));
 const Shop = lazy(() => import("@/pages/Shop"));
 const Blog = lazy(() => import("@/pages/Blog"));
 const BlogPost = lazy(() => import("@/pages/BlogPost"));
@@ -46,7 +45,6 @@ export default function App() {
           <Route path={`${SEG.tours}/:slug`} element={<TourDetail />} />
           <Route path={SEG.outdoor} element={<Outdoor />} />
           <Route path={SEG.transport} element={<Transport />} />
-          <Route path={SEG.lifeguard} element={<Lifeguard />} />
           <Route path={SEG.shop} element={<Shop />} />
           <Route path={SEG.blog} element={<Blog />} />
           <Route path={`${SEG.blog}/:slug`} element={<BlogPost />} />

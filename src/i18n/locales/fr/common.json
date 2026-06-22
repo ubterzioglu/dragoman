@@ -14,7 +14,6 @@
     "seaKayak": "Kayak de mer",
     "outdoor": "Activités nature",
     "transport": "Transport & Séjour",
-    "lifeguard": "Sauvetage",
     "shop": "Boutique",
     "blog": "Blog",
     "reservation": "Réservation et Contact"
@@ -118,7 +117,7 @@
   },
   "faq": {
     "title": "Questions fréquentes",
-    "subtitle": "Tout ce que vous devez savoir avant de pagayer.",
+    "subtitle": "Tout ce que vous devez savoir sur la plongée, le kayak de mer et nos activités de plein air.",
     "eyebrow": "FAQ"
   },
   "gallery": {
@@ -181,15 +180,13 @@
   },
   "outdoor": {
     "title": "Activités pleine nature",
-    "subtitle": "Randonnée, vélo, coasteering et circuits multisports."
+    "subtitle": "Randonnée, vélo, coasteering et circuits multisports.",
+    "priceNote": "Les prix sont en euros et peuvent changer. Contactez-nous pour les informations à jour."
   },
   "transport": {
     "title": "Transport & Hébergement",
-    "subtitle": "Hébergement hôtelier et transferts aéroport."
-  },
-  "lifeguard": {
-    "title": "Centre de sauvetage",
-    "subtitle": "Cours de sauveteur bronze, argent et or."
+    "subtitle": "Hébergement hôtelier et transferts aéroport.",
+    "priceNote": "Prix et disponibilités sur demande. Contactez-nous pour les informations à jour."
   },
   "shop": {
     "title": "Boutique",
@@ -204,14 +201,12 @@
   "homeServices": {
     "eyebrow": "Ce que nous faisons",
     "title": "Nos services",
-    "subtitle": "De la plongée au kayak de mer, des aventures nature à la formation de sauvetage.",
+    "subtitle": "De la plongée au kayak de mer et aux aventures nature.",
     "diving": "Plongée",
     "divingDesc": "Centre SSI, stages et forfaits.",
     "seaKayak": "Kayak de mer",
     "seaKayakDesc": "Sorties guidées à Kekova.",
     "outdoor": "Activités nature",
-    "outdoorDesc": "Randonnée, vélo, coasteering.",
-    "lifeguard": "Sauvetage",
-    "lifeguardDesc": "Cours bronze, argent, or."
+    "outdoorDesc": "Randonnée, vélo, coasteering."
   }
 }

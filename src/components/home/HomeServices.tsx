@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Waves, Sailboat, Mountain, LifeBuoy } from "lucide-react";
+import { Waves, Sailboat, Mountain } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { useLang } from "@/hooks/useLang";
 import { SEG } from "@/lib/routes";
@@ -12,7 +12,6 @@ export function HomeServices() {
     { icon: Waves, to: SEG.diving, label: t("homeServices.diving"), desc: t("homeServices.divingDesc") },
     { icon: Sailboat, to: SEG.tours, label: t("homeServices.seaKayak"), desc: t("homeServices.seaKayakDesc") },
     { icon: Mountain, to: SEG.outdoor, label: t("homeServices.outdoor"), desc: t("homeServices.outdoorDesc") },
-    { icon: LifeBuoy, to: SEG.lifeguard, label: t("homeServices.lifeguard"), desc: t("homeServices.lifeguardDesc") },
   ];
 
   return (
@@ -22,7 +21,7 @@ export function HomeServices() {
         title={t("homeServices.title")}
         subtitle={t("homeServices.subtitle")}
       />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {services.map(({ icon: Icon, to, label, desc }) => (
           <Link
             key={to}

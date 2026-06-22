@@ -69,12 +69,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-8 flex flex-wrap items-center justify-center gap-4"
+          className="mb-24 mt-8 flex flex-wrap items-center justify-center gap-4 md:mb-28"
         >
           <Button asChild size="lg" variant="primary">
             <Link to={localePath(SEG.tours)}>{t("hero.ctaTours")}</Link>
           </Button>
-          <Button asChild size="lg" variant="ghost">
+          <Button asChild size="lg" variant="primary">
             <Link to={localePath(SEG.contact)}>{t("hero.ctaBook")}</Link>
           </Button>
         </motion.div>

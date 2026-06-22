@@ -14,7 +14,6 @@
     "seaKayak": "Deniz Kayağı",
     "outdoor": "Doğa Etkinlikleri",
     "transport": "Ulaşım & Konaklama",
-    "lifeguard": "Cankurtarma",
     "shop": "Dükkan",
     "blog": "Blog",
     "reservation": "Rezervasyon ve İletişim"
@@ -181,15 +180,13 @@
   },
   "outdoor": {
     "title": "Doğa Etkinlikleri",
-    "subtitle": "Yürüyüş, bisiklet, coasteering ve çoklu aktivite turları."
+    "subtitle": "Yürüyüş, bisiklet, coasteering ve çoklu aktivite turları.",
+    "priceNote": "Fiyatlar Euro cinsindendir ve değişebilir. Güncel bilgi için bizimle iletişime geçin."
   },
   "transport": {
     "title": "Ulaşım & Konaklama",
-    "subtitle": "Otel konaklaması ve havalimanı transfer hizmetleri."
-  },
-  "lifeguard": {
-    "title": "Cankurtarma Merkezi",
-    "subtitle": "Bronz, Gümüş ve Altın cankurtaran kursları."
+    "subtitle": "Otel konaklaması ve havalimanı transfer hizmetleri.",
+    "priceNote": "Fiyatlar ve müsaitlik talep üzerinedir. Güncel bilgi için bizimle iletişime geçin."
   },
   "shop": {
     "title": "Dükkan",
@@ -204,14 +201,12 @@
   "homeServices": {
     "eyebrow": "Ne yapıyoruz",
     "title": "Hizmetlerimiz",
-    "subtitle": "Dalıştan deniz kayağına, doğa etkinliklerinden cankurtarma eğitimine.",
+    "subtitle": "Dalıştan deniz kayağına ve doğa etkinliklerine.",
     "diving": "Dalış",
     "divingDesc": "SSI dalış merkezi, kurslar ve paketler.",
     "seaKayak": "Deniz Kayağı",
     "seaKayakDesc": "Kekova'da rehberli kayak turları.",
     "outdoor": "Doğa Etkinlikleri",
-    "outdoorDesc": "Yürüyüş, bisiklet, coasteering.",
-    "lifeguard": "Cankurtarma",
-    "lifeguardDesc": "Bronz, Gümüş, Altın kurslar."
+    "outdoorDesc": "Yürüyüş, bisiklet, coasteering."
   }
 }

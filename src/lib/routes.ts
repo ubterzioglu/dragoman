@@ -7,7 +7,6 @@ export const SEG = {
   tours: "turlar",
   outdoor: "doga-etkinlikleri",
   transport: "ulasim-konaklama",
-  lifeguard: "cankurtarma",
   shop: "dukkan",
   blog: "blog",
   customTours: "ozel-turlar",
