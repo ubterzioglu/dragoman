@@ -1,15 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Localized home pages. The full per-section URL set is added in Phase 5 once
-     all service sections (diving, sea kayak, outdoor, etc.) are wired up. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://dragomanturkey.online/tr</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://dragomanturkey.online/tr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dragomanturkey.online/en"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://dragomanturkey.online/fr"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dragomanturkey.online/tr"/>
-  </url>
+<!-- Dragoman Diving & Outdoors — localized (tr/en/fr) section URLs.
+     Turkish path segments are shared across locales (see src/lib/routes.ts). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://dragomanturkey.online/tr</loc></url>
   <url><loc>https://dragomanturkey.online/en</loc></url>
   <url><loc>https://dragomanturkey.online/fr</loc></url>
+
+  <url><loc>https://dragomanturkey.online/tr/dalis</loc></url>
+  <url><loc>https://dragomanturkey.online/en/dalis</loc></url>
+  <url><loc>https://dragomanturkey.online/fr/dalis</loc></url>
+
+  <url><loc>https://dragomanturkey.online/tr/turlar</loc></url>
+  <url><loc>https://dragomanturkey.online/en/turlar</loc></url>
+  <url><loc>https://dragomanturkey.online/fr/turlar</loc></url>
+
+  <url><loc>https://dragomanturkey.online/tr/doga-etkinlikleri</loc></url>
+  <url><loc>https://dragomanturkey.online/en/doga-etkinlikleri</loc></url>
+  <url><loc>https://dragomanturkey.online/fr/doga-etkinlikleri</loc></url>
+
+  <url><loc>https://dragomanturkey.online/tr/ulasim-konaklama</loc></url>
+  <url><loc>https://dragomanturkey.online/en/ulasim-konaklama</loc></url>
+  <url><loc>https://dragomanturkey.online/fr/ulasim-konaklama</loc></url>
+
+  <url><loc>https://dragomanturkey.online/tr/cankurtarma</loc></url>
+  <url><loc>https://dragomanturkey.online/en/cankurtarma</loc></url>
+  <url><loc>https://dragomanturkey.online/fr/cankurtarma</loc></url>
+
+  <url><loc>https://dragomanturkey.online/tr/dukkan</loc></url>
+  <url><loc>https://dragomanturkey.online/en/dukkan</loc></url>
+  <url><loc>https://dragomanturkey.online/fr/dukkan</loc></url>
+
+  <url><loc>https://dragomanturkey.online/tr/blog</loc></url>
+  <url><loc>https://dragomanturkey.online/en/blog</loc></url>
+  <url><loc>https://dragomanturkey.online/fr/blog</loc></url>
+
+  <url><loc>https://dragomanturkey.online/tr/hakkimizda</loc></url>
+  <url><loc>https://dragomanturkey.online/en/hakkimizda</loc></url>
+  <url><loc>https://dragomanturkey.online/fr/hakkimizda</loc></url>
+
+  <url><loc>https://dragomanturkey.online/tr/galeri</loc></url>
+  <url><loc>https://dragomanturkey.online/en/galeri</loc></url>
+  <url><loc>https://dragomanturkey.online/fr/galeri</loc></url>
+
+  <url><loc>https://dragomanturkey.online/tr/yorumlar</loc></url>
+  <url><loc>https://dragomanturkey.online/en/yorumlar</loc></url>
+  <url><loc>https://dragomanturkey.online/fr/yorumlar</loc></url>
+
+  <url><loc>https://dragomanturkey.online/tr/iletisim</loc></url>
+  <url><loc>https://dragomanturkey.online/en/iletisim</loc></url>
+  <url><loc>https://dragomanturkey.online/fr/iletisim</loc></url>
 </urlset>
