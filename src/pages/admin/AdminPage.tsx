@@ -6,6 +6,7 @@ import RevisionsPanel from "./RevisionsPanel";
 import BlogPanel from "./BlogPanel";
 import ReviewsPanel from "./ReviewsPanel";
 import UpdatesPanel from "./UpdatesPanel";
+import StatusReportPanel from "./StatusReportPanel";
 import GalleryPanel from "./GalleryPanel";
 import GuidePanel from "./GuidePanel";
 import ChangePasswordModal from "./ChangePasswordModal";
@@ -100,7 +101,8 @@ type TabKey =
   | "blog"
   | "gallery"
   | "reviews"
-  | "updates";
+  | "updates"
+  | "status";
 
 const TABS: { key: TabKey; label: string }[] = [
   { key: "guide", label: "Rehber" },
@@ -110,6 +112,7 @@ const TABS: { key: TabKey; label: string }[] = [
   { key: "gallery", label: "Galeri" },
   { key: "reviews", label: "Yorumlar" },
   { key: "updates", label: "Güncellemeler" },
+  { key: "status", label: "Durum Raporu" },
 ];
 
 // ─── Main admin page ─────────────────────────────────────────────────────────
@@ -302,6 +305,7 @@ export default function AdminPage() {
         {tab === "gallery" && <GalleryPanel />}
         {tab === "reviews" && <ReviewsPanel />}
         {tab === "updates" && <UpdatesPanel />}
+        {tab === "status" && <StatusReportPanel />}
       </div>
 
       <ChangePasswordModal
