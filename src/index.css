@@ -39,3 +39,14 @@
       linear-gradient(135deg, #014439, #0a8a74);
   }
 }
+
+/* Coming Soon: drifting waves. Kept outside @layer so the per-layer inline
+   animation (varying duration/delay per wave) is never purged. */
+@keyframes moveWave {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}

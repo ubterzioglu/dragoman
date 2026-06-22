@@ -60,11 +60,23 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        // Coming Soon: paddler glides left→right, rocks gently, waves drift.
+        paddle: {
+          "0%": { left: "-120px" },
+          "100%": { left: "105%" },
+        },
+        rock: {
+          "0%, 100%": { transform: "rotate(-4deg)" },
+          "50%": { transform: "rotate(4deg)" },
+        },
+        // Note: moveWave lives in index.css (used via inline style, not a utility).
       },
       animation: {
         bob: "bob 5s ease-in-out infinite",
         fadeUp: "fadeUp 0.8s ease both",
         marquee: "marquee 40s linear infinite",
+        paddle: "paddle 22s linear infinite",
+        rock: "rock 3s ease-in-out infinite",
       },
     },
   },

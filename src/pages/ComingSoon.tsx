@@ -113,11 +113,59 @@ export default function ComingSoon() {
           </div>
         )}
 
-        {/* Layer 3: bottom wave shimmer */}
+        {/* Layer 3: paddling kayak gliding left→right above the waves */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-teal-light/15 to-transparent"
-        />
+          className={`pointer-events-none absolute bottom-[70px] z-[2] w-[90px] ${
+            reduceMotion ? "left-8" : "animate-paddle"
+          }`}
+        >
+          <div className={reduceMotion ? "" : "animate-rock"}>
+            <svg viewBox="0 0 120 60" className="h-auto w-full">
+              <path d="M8 38 Q60 56 112 38 Q60 46 8 38 Z" fill="#f16e0b" />
+              <line x1="40" y1="14" x2="80" y2="42" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+              <ellipse cx="38" cy="12" rx="7" ry="3.5" fill="#fff" transform="rotate(35 38 12)" />
+              <ellipse cx="82" cy="44" rx="7" ry="3.5" fill="#fff" transform="rotate(35 82 44)" />
+              <circle cx="60" cy="28" r="6" fill="#014439" />
+              <rect x="55" y="32" width="10" height="9" rx="4" fill="#014439" />
+            </svg>
+          </div>
+        </div>
+
+        {/* Layer 4: animated drifting waves along the bottom edge */}
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] leading-none">
+          <svg viewBox="0 24 150 28" preserveAspectRatio="none" className="block h-[130px] w-full">
+            <defs>
+              <path
+                id="wavepath"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g>
+              {[
+                { y: 0, fill: "rgba(255,255,255,0.25)", duration: 9, delay: -2, opacity: 0.35 },
+                { y: 3, fill: "rgba(255,255,255,0.4)", duration: 12, delay: -3, opacity: 0.5 },
+                { y: 6, fill: "#eaf6f3", duration: 16, delay: -4, opacity: 0.85 },
+              ].map((w, i) => (
+                <use
+                  key={i}
+                  href="#wavepath"
+                  x="48"
+                  y={w.y}
+                  fill={w.fill}
+                  opacity={w.opacity}
+                  style={
+                    reduceMotion
+                      ? undefined
+                      : {
+                          animation: `moveWave ${w.duration}s cubic-bezier(.55,.5,.45,.5) ${w.delay}s infinite`,
+                        }
+                  }
+                />
+              ))}
+            </g>
+          </svg>
+        </div>
 
         {/* Foreground content */}
         <motion.div
@@ -126,12 +174,12 @@ export default function ComingSoon() {
           initial="hidden"
           animate="show"
         >
-          <motion.img
+          <motion.div
             variants={item}
-            src="/logo.png"
-            alt={SITE.name}
-            className={`mb-8 h-20 w-auto drop-shadow-lg ${reduceMotion ? "" : "animate-bob"}`}
-          />
+            className={`mb-8 rounded-3xl border border-white/20 bg-foam px-12 py-9 shadow-2xl ring-1 ring-black/5 ${reduceMotion ? "" : "animate-bob"}`}
+          >
+            <img src="/logo.png" alt={SITE.name} className="h-28 w-auto sm:h-32" />
+          </motion.div>
 
           <motion.p
             variants={item}
