@@ -11,3 +11,6 @@ dist/
 .env
 .env.local
 .env.*.local
+
+# Supabase CLI local link state
+supabase/.temp/

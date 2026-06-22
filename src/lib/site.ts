@@ -5,14 +5,14 @@
  */
 export const SITE = {
   name: "Dragoman SeaKayak",
-  domain: "https://dragomanseakayak.com",
-  ogImage: "https://dragomanseakayak.com/seakayakog.jpg",
+  domain: "https://dragomanturkey.online",
+  ogImage: "https://dragomanturkey.online/seakayakog.jpg",
   // Contact (from the hotel-presentation PDF / business records)
   phone: "+90 242 836 3614",
   // WhatsApp number in international digits, no "+" or spaces. TODO: confirm a
   // mobile WhatsApp line — falls back to the landline for now.
   whatsapp: "902428363614",
-  email: "info@dragomanseakayak.com",
+  email: "info@dragomanturkey.online",
   address: "Uzunçarşı Cad. No:15, Kaş 07580, Antalya, Türkiye",
   instagram: "https://instagram.com/dragomanseakayak",
   facebook: "https://facebook.com/dragomanseakayak",
