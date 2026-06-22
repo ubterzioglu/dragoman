@@ -23,9 +23,9 @@ export const SITE = {
   parentBrand: "Dragoman Turkey",
 } as const;
 
-export const LOCALES = ["tr", "en", "fr"] as const;
+export const LOCALES = ["en", "tr", "fr"] as const;
 export type Locale = (typeof LOCALES)[number];
-export const DEFAULT_LOCALE: Locale = "tr";
+export const DEFAULT_LOCALE: Locale = "en";
 
 /**
  * Path prefix the whole localized site is mounted under. The site is live at the
