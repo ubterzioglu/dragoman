@@ -25,20 +25,22 @@ export function Header() {
     <header className="sticky top-0 z-30 border-b border-teal/10 bg-white/90 backdrop-blur">
       <div className="container flex items-center justify-between py-3">
         <Link to={localePath()} aria-label="Dragoman SeaKayak">
-          <img src="/logo.png" alt="Dragoman SeaKayak" className="h-11 w-auto" />
+          <img src="/logo.png?v=2" alt="Dragoman SeaKayak" className="h-11 w-auto" />
         </Link>
 
-        <nav className="hidden items-center gap-6 lg:flex">
-          {links.map((l) => (
-            <NavLink
-              key={l.to}
-              to={l.to}
-              className={({ isActive }) =>
-                cn("text-sm font-medium text-teal transition-colors hover:text-orange", isActive && "text-orange")
-              }
-            >
-              {l.label}
-            </NavLink>
+        <nav className="hidden items-center gap-4 lg:flex">
+          {links.map((l, i) => (
+            <div key={l.to} className="flex items-center gap-4">
+              {i > 0 && <span aria-hidden className="h-4 w-px bg-teal/20" />}
+              <NavLink
+                to={l.to}
+                className={({ isActive }) =>
+                  cn("text-sm font-medium text-teal transition-colors hover:text-orange", isActive && "text-orange")
+                }
+              >
+                {l.label}
+              </NavLink>
+            </div>
           ))}
         </nav>
 
