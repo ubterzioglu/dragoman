@@ -177,11 +177,13 @@ export default function ComingSoon() {
         >
           <motion.div
             variants={item}
-            className={`mb-8 rounded-[2rem] border border-white/15 bg-white/10 p-3 shadow-2xl ring-1 ring-black/5 backdrop-blur-sm ${reduceMotion ? "" : "animate-bob"}`}
+            className={`mb-8 ${reduceMotion ? "" : "animate-bob"}`}
           >
-            <div className="rounded-2xl bg-foam px-12 py-9">
-              <img src="/logo.png?v=3" alt={SITE.name} className="h-28 w-auto sm:h-32" />
-            </div>
+            <img
+              src="/transparanlogo.png"
+              alt={SITE.name}
+              className="h-32 w-auto drop-shadow-[0_8px_30px_rgba(0,0,0,0.35)] sm:h-40"
+            />
           </motion.div>
 
           <motion.p
