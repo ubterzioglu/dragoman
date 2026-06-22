@@ -80,17 +80,6 @@ const TABS: AdminNavItem<TabKey>[] = [
     ],
   },
   {
-    key: "revisions",
-    label: "Revizyonlar",
-    description: "İç ekip isteklerini öncelik ve statüyle düzenleyin.",
-    icon: NotebookPen,
-    help: [
-      "Ekip içi değişiklik isteği oluşturun",
-      "Aciliyet (1-10) ve durum atayın",
-      "İlerledikçe durumu güncelleyin veya silin",
-    ],
-  },
-  {
     key: "blog",
     label: "Blog",
     description: "Yazı üretin, taslakları düzenleyin, yayına alın.",
@@ -141,6 +130,17 @@ const TABS: AdminNavItem<TabKey>[] = [
     help: [
       "Proje hedeflerini ve tamamlanma durumunu görün",
       "Eksik / bekleyen alanları tek tabloda izleyin",
+    ],
+  },
+  {
+    key: "revisions",
+    label: "Revizyonlar",
+    description: "İç ekip isteklerini öncelik ve statüyle düzenleyin.",
+    icon: NotebookPen,
+    help: [
+      "Ekip içi değişiklik isteği oluşturun",
+      "Aciliyet (1-10) ve durum atayın",
+      "İlerledikçe durumu güncelleyin veya silin",
     ],
   },
 ];
