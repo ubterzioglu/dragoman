@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Waves, Sailboat, Mountain } from "lucide-react";
+import { Waves, Sailboat, Mountain, Car } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { useLang } from "@/hooks/useLang";
 import { SEG } from "@/lib/routes";
@@ -12,6 +12,7 @@ export function HomeServices() {
     { icon: Waves, to: SEG.diving, label: t("homeServices.diving"), desc: t("homeServices.divingDesc") },
     { icon: Sailboat, to: SEG.tours, label: t("homeServices.seaKayak"), desc: t("homeServices.seaKayakDesc") },
     { icon: Mountain, to: SEG.outdoor, label: t("homeServices.outdoor"), desc: t("homeServices.outdoorDesc") },
+    { icon: Car, to: SEG.transport, label: t("homeServices.transport"), desc: t("homeServices.transportDesc") },
   ];
 
   return (

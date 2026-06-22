@@ -207,6 +207,8 @@
     "seaKayak": "Sea Kayak",
     "seaKayakDesc": "Guided kayak tours in Kekova.",
     "outdoor": "Outdoor Activities",
-    "outdoorDesc": "Hiking, biking, coasteering."
+    "outdoorDesc": "Hiking, biking, coasteering.",
+    "transport": "Transport & Services",
+    "transportDesc": "Airport transfers and hotel accommodation."
   }
 }

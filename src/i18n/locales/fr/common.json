@@ -207,6 +207,8 @@
     "seaKayak": "Kayak de mer",
     "seaKayakDesc": "Sorties guidées à Kekova.",
     "outdoor": "Activités nature",
-    "outdoorDesc": "Randonnée, vélo, coasteering."
+    "outdoorDesc": "Randonnée, vélo, coasteering.",
+    "transport": "Transport & Services",
+    "transportDesc": "Transferts aéroport et hébergement à l'hôtel."
   }
 }

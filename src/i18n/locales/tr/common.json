@@ -207,6 +207,8 @@
     "seaKayak": "Deniz Kayağı",
     "seaKayakDesc": "Kekova'da rehberli kayak turları.",
     "outdoor": "Doğa Etkinlikleri",
-    "outdoorDesc": "Yürüyüş, bisiklet, coasteering."
+    "outdoorDesc": "Yürüyüş, bisiklet, coasteering.",
+    "transport": "Ulaşım & Hizmetler",
+    "transportDesc": "Havalimanı transferi ve otel konaklaması."
   }
 }
