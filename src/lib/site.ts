@@ -17,8 +17,9 @@ export const SITE = {
   email: "info@dragomanturkey.online",
   address: "Uzunçarşı Cad. No:15, Kaş 07580, Antalya, Türkiye",
   tursab: "A4615",
-  instagram: "https://instagram.com/dragomanseakayak",
-  facebook: "https://facebook.com/dragomanseakayak",
+  // TODO: gerçek hesap adları gelince güncellenecek (placeholder).
+  instagram: "https://instagram.com/dragomanturkey",
+  facebook: "https://facebook.com/dragomanturkey",
   parentBrand: "Dragoman Turkey",
 } as const;
 
