@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-import { DEFAULT_LOCALE, isLocale, type Locale } from "@/lib/site";
+import { BASE_PATH, DEFAULT_LOCALE, isLocale, type Locale } from "@/lib/site";
 
 /**
  * Derives the active locale from the :lang route param, keeps i18next and
@@ -21,8 +21,8 @@ export function useLang() {
   /** Pick the right string/array from a Localized<T> content object. */
   const pick = <T,>(value: Record<Locale, T>): T => value[locale];
 
-  /** Build a path under the current locale, e.g. localePath("turlar") -> /tr/turlar */
-  const localePath = (path = "") => `/${locale}${path ? `/${path}` : ""}`;
+  /** Build a path under the current locale, e.g. localePath("turlar") -> /mvp/tr/turlar */
+  const localePath = (path = "") => `${BASE_PATH}/${locale}${path ? `/${path}` : ""}`;
 
   return { locale, t, pick, localePath };
 }

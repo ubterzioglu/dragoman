@@ -23,6 +23,13 @@ export const LOCALES = ["tr", "en", "fr", "ru"] as const;
 export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = "tr";
 
+/**
+ * Path prefix the whole localized site is mounted under. The site is staged at
+ * `/mvp` until launch while the root shows a Coming Soon placeholder. To go
+ * live, set this to "" and the router + every localePath() link follow.
+ */
+export const BASE_PATH = "/mvp";
+
 export function isLocale(value: string | undefined): value is Locale {
   return !!value && (LOCALES as readonly string[]).includes(value);
 }

@@ -13,8 +13,10 @@ export function LanguageSwitcher({ className }: { className?: string }) {
 
   const switchTo = (next: string) => {
     const parts = location.pathname.split("/");
-    // parts[0] = "" , parts[1] = current lang
-    parts[1] = next;
+    // Replace whichever segment is the active locale, leaving any base-path
+    // prefix (e.g. /mvp) and the rest of the path intact.
+    const langIndex = parts.findIndex((p) => isLocale(p));
+    if (langIndex >= 0) parts[langIndex] = next;
     navigate(parts.join("/") || `/${next}`);
   };
 

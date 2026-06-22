@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://dragomanseakayak.com/tr</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://dragomanseakayak.com/tr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dragomanseakayak.com/en"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://dragomanseakayak.com/fr"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dragomanseakayak.com/ru"/>
-  </url>
-  <url><loc>https://dragomanseakayak.com/tr/turlar</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://dragomanseakayak.com/tr/turlar"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dragomanseakayak.com/en/turlar"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://dragomanseakayak.com/fr/turlar"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dragomanseakayak.com/ru/turlar"/>
-  </url>
-  <url><loc>https://dragomanseakayak.com/tr/turlar/kekova-classic</loc></url>
-  <url><loc>https://dragomanseakayak.com/tr/turlar/kekova-west</loc></url>
-  <url><loc>https://dragomanseakayak.com/tr/turlar/kekova-east</loc></url>
-  <url><loc>https://dragomanseakayak.com/tr/ozel-turlar</loc></url>
-  <url><loc>https://dragomanseakayak.com/tr/trak-experience</loc></url>
-  <url><loc>https://dragomanseakayak.com/tr/hakkimizda</loc></url>
-  <url><loc>https://dragomanseakayak.com/tr/galeri</loc></url>
-  <url><loc>https://dragomanseakayak.com/tr/yorumlar</loc></url>
-  <url><loc>https://dragomanseakayak.com/tr/iletisim</loc></url>
-  <url><loc>https://dragomanseakayak.com/tr/sss</loc></url>
+<!-- Site is staged under /mvp until launch; only the Coming Soon root is listed.
+     Restore the full localized URL set when going live. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://dragomanseakayak.com/</loc></url>
 </urlset>
