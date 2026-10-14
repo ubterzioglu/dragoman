@@ -6,8 +6,8 @@
 export const SITE = {
   name: "Dragoman Diving & Outdoors",
   shortName: "Dragoman",
-  domain: "https://dragomanturkey.online",
-  ogImage: "https://dragomanturkey.online/seakayakog.jpg",
+  domain: "https://notyetbro.club",
+  ogImage: "https://notyetbro.club/seakayakog.jpg",
   // Contact (from dragoman-turkey.com — Dragoman Travel Agency / TÜRSAB A4615).
   phone: "+90 242 836 3614",
   mobile: "+90 533 290 14 63",

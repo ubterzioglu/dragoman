@@ -2,47 +2,47 @@
 <!-- Dragoman Diving & Outdoors — localized (tr/en/fr) section URLs.
      Turkish path segments are shared across locales (see src/lib/routes.ts). -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://dragomanturkey.online/tr</loc></url>
-  <url><loc>https://dragomanturkey.online/en</loc></url>
-  <url><loc>https://dragomanturkey.online/fr</loc></url>
+  <url><loc>https://notyetbro.club/tr</loc></url>
+  <url><loc>https://notyetbro.club/en</loc></url>
+  <url><loc>https://notyetbro.club/fr</loc></url>
 
-  <url><loc>https://dragomanturkey.online/tr/dalis</loc></url>
-  <url><loc>https://dragomanturkey.online/en/dalis</loc></url>
-  <url><loc>https://dragomanturkey.online/fr/dalis</loc></url>
+  <url><loc>https://notyetbro.club/tr/dalis</loc></url>
+  <url><loc>https://notyetbro.club/en/dalis</loc></url>
+  <url><loc>https://notyetbro.club/fr/dalis</loc></url>
 
-  <url><loc>https://dragomanturkey.online/tr/turlar</loc></url>
-  <url><loc>https://dragomanturkey.online/en/turlar</loc></url>
-  <url><loc>https://dragomanturkey.online/fr/turlar</loc></url>
+  <url><loc>https://notyetbro.club/tr/turlar</loc></url>
+  <url><loc>https://notyetbro.club/en/turlar</loc></url>
+  <url><loc>https://notyetbro.club/fr/turlar</loc></url>
 
-  <url><loc>https://dragomanturkey.online/tr/doga-etkinlikleri</loc></url>
-  <url><loc>https://dragomanturkey.online/en/doga-etkinlikleri</loc></url>
-  <url><loc>https://dragomanturkey.online/fr/doga-etkinlikleri</loc></url>
+  <url><loc>https://notyetbro.club/tr/doga-etkinlikleri</loc></url>
+  <url><loc>https://notyetbro.club/en/doga-etkinlikleri</loc></url>
+  <url><loc>https://notyetbro.club/fr/doga-etkinlikleri</loc></url>
 
-  <url><loc>https://dragomanturkey.online/tr/ulasim-konaklama</loc></url>
-  <url><loc>https://dragomanturkey.online/en/ulasim-konaklama</loc></url>
-  <url><loc>https://dragomanturkey.online/fr/ulasim-konaklama</loc></url>
+  <url><loc>https://notyetbro.club/tr/ulasim-konaklama</loc></url>
+  <url><loc>https://notyetbro.club/en/ulasim-konaklama</loc></url>
+  <url><loc>https://notyetbro.club/fr/ulasim-konaklama</loc></url>
 
-  <url><loc>https://dragomanturkey.online/tr/dukkan</loc></url>
-  <url><loc>https://dragomanturkey.online/en/dukkan</loc></url>
-  <url><loc>https://dragomanturkey.online/fr/dukkan</loc></url>
+  <url><loc>https://notyetbro.club/tr/dukkan</loc></url>
+  <url><loc>https://notyetbro.club/en/dukkan</loc></url>
+  <url><loc>https://notyetbro.club/fr/dukkan</loc></url>
 
-  <url><loc>https://dragomanturkey.online/tr/blog</loc></url>
-  <url><loc>https://dragomanturkey.online/en/blog</loc></url>
-  <url><loc>https://dragomanturkey.online/fr/blog</loc></url>
+  <url><loc>https://notyetbro.club/tr/blog</loc></url>
+  <url><loc>https://notyetbro.club/en/blog</loc></url>
+  <url><loc>https://notyetbro.club/fr/blog</loc></url>
 
-  <url><loc>https://dragomanturkey.online/tr/hakkimizda</loc></url>
-  <url><loc>https://dragomanturkey.online/en/hakkimizda</loc></url>
-  <url><loc>https://dragomanturkey.online/fr/hakkimizda</loc></url>
+  <url><loc>https://notyetbro.club/tr/hakkimizda</loc></url>
+  <url><loc>https://notyetbro.club/en/hakkimizda</loc></url>
+  <url><loc>https://notyetbro.club/fr/hakkimizda</loc></url>
 
-  <url><loc>https://dragomanturkey.online/tr/galeri</loc></url>
-  <url><loc>https://dragomanturkey.online/en/galeri</loc></url>
-  <url><loc>https://dragomanturkey.online/fr/galeri</loc></url>
+  <url><loc>https://notyetbro.club/tr/galeri</loc></url>
+  <url><loc>https://notyetbro.club/en/galeri</loc></url>
+  <url><loc>https://notyetbro.club/fr/galeri</loc></url>
 
-  <url><loc>https://dragomanturkey.online/tr/yorumlar</loc></url>
-  <url><loc>https://dragomanturkey.online/en/yorumlar</loc></url>
-  <url><loc>https://dragomanturkey.online/fr/yorumlar</loc></url>
+  <url><loc>https://notyetbro.club/tr/yorumlar</loc></url>
+  <url><loc>https://notyetbro.club/en/yorumlar</loc></url>
+  <url><loc>https://notyetbro.club/fr/yorumlar</loc></url>
 
-  <url><loc>https://dragomanturkey.online/tr/iletisim</loc></url>
-  <url><loc>https://dragomanturkey.online/en/iletisim</loc></url>
-  <url><loc>https://dragomanturkey.online/fr/iletisim</loc></url>
+  <url><loc>https://notyetbro.club/tr/iletisim</loc></url>
+  <url><loc>https://notyetbro.club/en/iletisim</loc></url>
+  <url><loc>https://notyetbro.club/fr/iletisim</loc></url>
 </urlset>
